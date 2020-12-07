@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD21662825694B1B00EF984C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21662725694B1B00EF984C /* CollectionViewCell.swift */; };
+		BD21662B25694B8500EF984C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD21662A25694B8500EF984C /* CollectionViewCell.xib */; };
+		BD7033ED2559847000D54CE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033EC2559847000D54CE6 /* AppDelegate.swift */; };
+		BD7033EF2559847000D54CE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033EE2559847000D54CE6 /* SceneDelegate.swift */; };
+		BD7033F12559847000D54CE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033F02559847000D54CE6 /* ViewController.swift */; };
+		BD7033F42559847000D54CE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7033F22559847000D54CE6 /* Main.storyboard */; };
+		BD7033F62559847100D54CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7033F52559847100D54CE6 /* Assets.xcassets */; };
+		BD7033F92559847100D54CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7033F72559847100D54CE6 /* LaunchScreen.storyboard */; };
+		BDA2F6FB25653E9400CB9A7F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F6FA25653E9400CB9A7F /* TableViewController.swift */; };
+		BDA2F6FF2565659900CB9A7F /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */; };
+		D341DDF3B0E23140496A4D06 /* Pods_GSMFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0FC800111F33E3B5B77400 /* Pods_GSMFestival.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		37B793DA328CD97A5FFAAD98 /* Pods-GSMFestival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMFestival.release.xcconfig"; path = "Target Support Files/Pods-GSMFestival/Pods-GSMFestival.release.xcconfig"; sourceTree = "<group>"; };
+		7D0FC800111F33E3B5B77400 /* Pods_GSMFestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSMFestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		864F02D4C4C2F685D6A56724 /* Pods-GSMFestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMFestival.debug.xcconfig"; path = "Target Support Files/Pods-GSMFestival/Pods-GSMFestival.debug.xcconfig"; sourceTree = "<group>"; };
+		BD21662725694B1B00EF984C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		BD21662A25694B8500EF984C /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		BD7033E92559847000D54CE6 /* GSMFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSMFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7033EC2559847000D54CE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD7033EE2559847000D54CE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BD7033F02559847000D54CE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD7033F32559847000D54CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD7033F52559847100D54CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD7033F82559847100D54CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD7033FA2559847100D54CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA2F6FA25653E9400CB9A7F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD7033E62559847000D54CE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D341DDF3B0E23140496A4D06 /* Pods_GSMFestival.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B1CD0901B7BA1195281FEA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				864F02D4C4C2F685D6A56724 /* Pods-GSMFestival.debug.xcconfig */,
+				37B793DA328CD97A5FFAAD98 /* Pods-GSMFestival.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD7033E02559847000D54CE6 = {
+			isa = PBXGroup;
+			children = (
+				BD7033EB2559847000D54CE6 /* GSMFestival */,
+				BD7033EA2559847000D54CE6 /* Products */,
+				8B1CD0901B7BA1195281FEA1 /* Pods */,
+				D519105DD5D31078A4AD9916 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD7033EA2559847000D54CE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD7033E92559847000D54CE6 /* GSMFestival.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD7033EB2559847000D54CE6 /* GSMFestival */ = {
+			isa = PBXGroup;
+			children = (
+				BD7033EC2559847000D54CE6 /* AppDelegate.swift */,
+				BD7033EE2559847000D54CE6 /* SceneDelegate.swift */,
+				BD7033F02559847000D54CE6 /* ViewController.swift */,
+				BDA2F6FA25653E9400CB9A7F /* TableViewController.swift */,
+				BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */,
+				BD7033F22559847000D54CE6 /* Main.storyboard */,
+				BD7033F52559847100D54CE6 /* Assets.xcassets */,
+				BD21662725694B1B00EF984C /* CollectionViewCell.swift */,
+				BD21662A25694B8500EF984C /* CollectionViewCell.xib */,
+				BD7033F72559847100D54CE6 /* LaunchScreen.storyboard */,
+				BD7033FA2559847100D54CE6 /* Info.plist */,
+			);
+			path = GSMFestival;
+			sourceTree = "<group>";
+		};
+		D519105DD5D31078A4AD9916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D0FC800111F33E3B5B77400 /* Pods_GSMFestival.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD7033E82559847000D54CE6 /* GSMFestival */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7033FD2559847100D54CE6 /* Build configuration list for PBXNativeTarget "GSMFestival" */;
+			buildPhases = (
+				A63B726BCF556ECD386AAF14 /* [CP] Check Pods Manifest.lock */,
+				BD7033E52559847000D54CE6 /* Sources */,
+				BD7033E62559847000D54CE6 /* Frameworks */,
+				BD7033E72559847000D54CE6 /* Resources */,
+				DA0EDB4ACB1423EB48E6B1C1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSMFestival;
+			productName = GSMFestival;
+			productReference = BD7033E92559847000D54CE6 /* GSMFestival.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD7033E12559847000D54CE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					BD7033E82559847000D54CE6 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = BD7033E42559847000D54CE6 /* Build configuration list for PBXProject "GSMFestival" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD7033E02559847000D54CE6;
+			productRefGroup = BD7033EA2559847000D54CE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD7033E82559847000D54CE6 /* GSMFestival */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD7033E72559847000D54CE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7033F92559847100D54CE6 /* LaunchScreen.storyboard in Resources */,
+				BD7033F62559847100D54CE6 /* Assets.xcassets in Resources */,
+				BD21662B25694B8500EF984C /* CollectionViewCell.xib in Resources */,
+				BD7033F42559847000D54CE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A63B726BCF556ECD386AAF14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GSMFestival-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0EDB4ACB1423EB48E6B1C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GSMFestival/Pods-GSMFestival-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GSMFestival/Pods-GSMFestival-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GSMFestival/Pods-GSMFestival-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD7033E52559847000D54CE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7033F12559847000D54CE6 /* ViewController.swift in Sources */,
+				BDA2F6FF2565659900CB9A7F /* ClassViewController.swift in Sources */,
+				BD21662825694B1B00EF984C /* CollectionViewCell.swift in Sources */,
+				BD7033ED2559847000D54CE6 /* AppDelegate.swift in Sources */,
+				BD7033EF2559847000D54CE6 /* SceneDelegate.swift in Sources */,
+				BDA2F6FB25653E9400CB9A7F /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD7033F22559847000D54CE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD7033F32559847000D54CE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD7033F72559847100D54CE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD7033F82559847100D54CE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD7033FB2559847100D54CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD7033FC2559847100D54CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD7033FE2559847100D54CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 864F02D4C4C2F685D6A56724 /* Pods-GSMFestival.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GSMFestival/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.GSMFestival;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BD7033FF2559847100D54CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B793DA328CD97A5FFAAD98 /* Pods-GSMFestival.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GSMFestival/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.GSMFestival;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD7033E42559847000D54CE6 /* Build configuration list for PBXProject "GSMFestival" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7033FB2559847100D54CE6 /* Debug */,
+				BD7033FC2559847100D54CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD7033FD2559847100D54CE6 /* Build configuration list for PBXNativeTarget "GSMFestival" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7033FE2559847100D54CE6 /* Debug */,
+				BD7033FF2559847100D54CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD7033E12559847000D54CE6 /* Project object */;
+}
