@@ -1,2 +1,2 @@
 # Festival
-2020 GSM HighSchool Festival
+2020 GSM Festival
