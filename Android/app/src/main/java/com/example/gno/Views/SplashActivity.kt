@@ -20,6 +20,10 @@ class SplashActivity : AppCompatActivity() {
         startLoading()
     }
 
+    // region
+    // 로그인 메소드, 세션 유지
+    // endregion
+    
     // 앱 실행 후 2초 뒤에 MainActivity로 전환
     private fun startLoading() {
         Handler().postDelayed({
