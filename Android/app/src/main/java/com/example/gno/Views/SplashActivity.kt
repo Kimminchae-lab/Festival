@@ -4,12 +4,19 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.Window
+import androidx.appcompat.app.ActionBar
 import com.example.gno.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+
+        // 액션바 없애기
+        val actionBar = supportActionBar
+        actionBar?.hide()
+
         startLoading()
     }
 
