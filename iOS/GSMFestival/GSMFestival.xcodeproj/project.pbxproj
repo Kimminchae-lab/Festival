@@ -11,29 +11,29 @@
 		BD21662B25694B8500EF984C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD21662A25694B8500EF984C /* CollectionViewCell.xib */; };
 		BD7033ED2559847000D54CE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033EC2559847000D54CE6 /* AppDelegate.swift */; };
 		BD7033EF2559847000D54CE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033EE2559847000D54CE6 /* SceneDelegate.swift */; };
-		BD7033F12559847000D54CE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033F02559847000D54CE6 /* ViewController.swift */; };
+		BD7033F12559847000D54CE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033F02559847000D54CE6 /* HomeViewController.swift */; };
 		BD7033F42559847000D54CE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7033F22559847000D54CE6 /* Main.storyboard */; };
 		BD7033F62559847100D54CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7033F52559847100D54CE6 /* Assets.xcassets */; };
 		BD7033F92559847100D54CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7033F72559847100D54CE6 /* LaunchScreen.storyboard */; };
+		BDA2E8FC257F995C002ECD2A /* SchoolScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2E8FB257F995C002ECD2A /* SchoolScheduleViewController.swift */; };
 		BDA2F6FB25653E9400CB9A7F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F6FA25653E9400CB9A7F /* TableViewController.swift */; };
 		BDA2F6FF2565659900CB9A7F /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */; };
-		D341DDF3B0E23140496A4D06 /* Pods_GSMFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0FC800111F33E3B5B77400 /* Pods_GSMFestival.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37B793DA328CD97A5FFAAD98 /* Pods-GSMFestival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMFestival.release.xcconfig"; path = "Target Support Files/Pods-GSMFestival/Pods-GSMFestival.release.xcconfig"; sourceTree = "<group>"; };
-		7D0FC800111F33E3B5B77400 /* Pods_GSMFestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSMFestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		864F02D4C4C2F685D6A56724 /* Pods-GSMFestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMFestival.debug.xcconfig"; path = "Target Support Files/Pods-GSMFestival/Pods-GSMFestival.debug.xcconfig"; sourceTree = "<group>"; };
 		BD21662725694B1B00EF984C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		BD21662A25694B8500EF984C /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		BD7033E92559847000D54CE6 /* GSMFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSMFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7033EC2559847000D54CE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7033EE2559847000D54CE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD7033F02559847000D54CE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD7033F02559847000D54CE6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BD7033F32559847000D54CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD7033F52559847100D54CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7033F82559847100D54CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD7033FA2559847100D54CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA2E8FB257F995C002ECD2A /* SchoolScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolScheduleViewController.swift; sourceTree = "<group>"; };
 		BDA2F6FA25653E9400CB9A7F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D341DDF3B0E23140496A4D06 /* Pods_GSMFestival.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +64,6 @@
 				BD7033EB2559847000D54CE6 /* GSMFestival */,
 				BD7033EA2559847000D54CE6 /* Products */,
 				8B1CD0901B7BA1195281FEA1 /* Pods */,
-				D519105DD5D31078A4AD9916 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,25 +80,26 @@
 			children = (
 				BD7033EC2559847000D54CE6 /* AppDelegate.swift */,
 				BD7033EE2559847000D54CE6 /* SceneDelegate.swift */,
-				BD7033F02559847000D54CE6 /* ViewController.swift */,
-				BDA2F6FA25653E9400CB9A7F /* TableViewController.swift */,
-				BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */,
-				BD7033F22559847000D54CE6 /* Main.storyboard */,
-				BD7033F52559847100D54CE6 /* Assets.xcassets */,
+				BDA2E8F4257F7B03002ECD2A /* Controller */,
 				BD21662725694B1B00EF984C /* CollectionViewCell.swift */,
 				BD21662A25694B8500EF984C /* CollectionViewCell.xib */,
+				BD7033F22559847000D54CE6 /* Main.storyboard */,
 				BD7033F72559847100D54CE6 /* LaunchScreen.storyboard */,
+				BD7033F52559847100D54CE6 /* Assets.xcassets */,
 				BD7033FA2559847100D54CE6 /* Info.plist */,
 			);
 			path = GSMFestival;
 			sourceTree = "<group>";
 		};
-		D519105DD5D31078A4AD9916 /* Frameworks */ = {
+		BDA2E8F4257F7B03002ECD2A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7D0FC800111F33E3B5B77400 /* Pods_GSMFestival.framework */,
+				BD7033F02559847000D54CE6 /* HomeViewController.swift */,
+				BDA2F6FA25653E9400CB9A7F /* TableViewController.swift */,
+				BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */,
+				BDA2E8FB257F995C002ECD2A /* SchoolScheduleViewController.swift */,
 			);
-			name = Frameworks;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,12 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7033F12559847000D54CE6 /* ViewController.swift in Sources */,
+				BD7033F12559847000D54CE6 /* HomeViewController.swift in Sources */,
 				BDA2F6FF2565659900CB9A7F /* ClassViewController.swift in Sources */,
 				BD21662825694B1B00EF984C /* CollectionViewCell.swift in Sources */,
 				BD7033ED2559847000D54CE6 /* AppDelegate.swift in Sources */,
 				BD7033EF2559847000D54CE6 /* SceneDelegate.swift in Sources */,
 				BDA2F6FB25653E9400CB9A7F /* TableViewController.swift in Sources */,
+				BDA2E8FC257F995C002ECD2A /* SchoolScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

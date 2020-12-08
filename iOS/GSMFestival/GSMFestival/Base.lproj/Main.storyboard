@@ -8,22 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--공지-->
-        <scene sceneID="GVQ-8I-CAS">
-            <objects>
-                <viewController id="t1M-Tx-t6u" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GyB-My-4dZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="y5f-XP-dHE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="공지" id="W6s-7s-RC0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ics-Tc-UNw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-507" y="1594"/>
-        </scene>
         <!--더보기-->
         <scene sceneID="E8K-x1-5yI">
             <objects>
@@ -38,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glM-o7-Oce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="1594"/>
+            <point key="canvasLocation" x="403" y="1594"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="2Gt-TD-4F9">
@@ -87,7 +71,7 @@
         <!--Home-->
         <scene sceneID="O71-fU-aZX">
             <objects>
-                <viewController id="dbb-TS-5UV" customClass="ViewController" customModule="GSMFestival" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dbb-TS-5UV" customClass="HomeViewController" customModule="GSMFestival" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dKo-eI-wWk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,18 +115,33 @@
         <!--학사일정-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SchoolScheduleViewController" customModule="GSMFestival" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeU-sz-bF6" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qeU-sz-bF6" secondAttribute="trailing" id="5aw-9q-B1c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qeU-sz-bF6" secondAttribute="bottom" id="Kgi-hf-mqt"/>
+                            <constraint firstItem="qeU-sz-bF6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UP7-rM-DmB"/>
+                            <constraint firstItem="qeU-sz-bF6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qCo-D1-VO9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="학사일정" id="51a-Lx-ucE"/>
+                    <connections>
+                        <outlet property="calendarView" destination="qeU-sz-bF6" id="pDd-mH-4Qw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="1594"/>
+            <point key="canvasLocation" x="-501" y="1594"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="LQg-MM-KOG">
@@ -156,20 +155,19 @@
                     </tabBar>
                     <connections>
                         <segue destination="4pf-qK-ioi" kind="relationship" relationship="viewControllers" id="Y83-ij-td0"/>
-                        <segue destination="zij-3u-gwK" kind="relationship" relationship="viewControllers" id="vEh-21-lNG"/>
                         <segue destination="Opj-IG-YCg" kind="relationship" relationship="viewControllers" id="jdx-sA-tDD"/>
                         <segue destination="z0C-7B-XLr" kind="relationship" relationship="viewControllers" id="rCV-nD-XYW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzm-vR-Acb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-213" y="129"/>
+            <point key="canvasLocation" x="-501" y="129"/>
         </scene>
-        <!--내 Class-->
+        <!--공지-->
         <scene sceneID="INf-63-HSY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4pf-qK-ioi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="내 Class" id="arc-Nb-s2q"/>
+                    <tabBarItem key="tabBarItem" title="공지" image="house.fill" catalog="system" id="arc-Nb-s2q"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="FOm-Du-mvD">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -184,30 +182,11 @@
             </objects>
             <point key="canvasLocation" x="-1391.304347826087" y="928.79464285714278"/>
         </scene>
-        <!--공지-->
-        <scene sceneID="1ay-65-hXX">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zij-3u-gwK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="공지" id="tAR-ei-Gby"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="QPm-se-2YX">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="t1M-Tx-t6u" kind="relationship" relationship="rootViewController" id="CUo-Fe-PKn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c4J-u4-CW3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-507" y="929"/>
-        </scene>
         <!--학사일정-->
         <scene sceneID="gr7-XQ-diw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Opj-IG-YCg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="학사일정" id="iII-Vx-plh"/>
+                    <tabBarItem key="tabBarItem" title="학사일정" image="calendar" catalog="system" id="iII-Vx-plh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="K6g-bS-anf">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -220,13 +199,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRu-0z-pTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="929"/>
+            <point key="canvasLocation" x="-501" y="929"/>
         </scene>
         <!--더보기-->
         <scene sceneID="aqs-og-2ya">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z0C-7B-XLr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="더보기" id="Rzt-OM-KM7"/>
+                    <tabBarItem key="tabBarItem" title="더보기" image="plus" catalog="system" id="Rzt-OM-KM7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="m84-b5-W0C">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -239,7 +218,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSA-ai-ptR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="929"/>
+            <point key="canvasLocation" x="403" y="929"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="Fbc-W3-RUG">
@@ -261,7 +240,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="secondarySystemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
