@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  GSMFestival
 //
 //  Created by 조주혁 on 2020/11/09.
@@ -11,7 +11,7 @@ import SideMenu
 
 public var items = ["Home","2-4"]
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     
     
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController {
+extension HomeViewController {
     
     // 콤포지셔널 레이아웃 설정
     func createCompositionalLayout() -> UICollectionViewLayout {
@@ -90,11 +90,11 @@ extension ViewController {
     }
 }
 
-extension ViewController: UICollectionViewDelegate {
+extension HomeViewController: UICollectionViewDelegate {
     
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count - 1
     }
