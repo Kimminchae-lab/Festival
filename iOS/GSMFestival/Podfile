@@ -7,4 +7,5 @@ target 'GSMFestival' do
 
   # Pods for GSMFestival
   pod 'SideMenu'
+  pod 'FSCalendar'
 end
