@@ -13,13 +13,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        <TextView
-            android:id="@+id/toolbarTextView"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:longClickable="false"
-            android:text="@string/app_name"/>
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/toolbarTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:longClickable="false"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="G:NO"/>
+        </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
