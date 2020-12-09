@@ -17,26 +17,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deno_black_logo" translatesAutoresizingMaskIntoConstraints="NO" id="NXe-Yu-wEV">
-                                <rect key="frame" x="71" y="305" width="273" height="286"/>
+                                <rect key="frame" x="37" y="249" width="341" height="399"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright 2020. Amolang All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XO-XD-seg">
-                                <rect key="frame" x="80" y="811" width="255" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright 2020. Amolang All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XO-XD-seg">
+                                <rect key="frame" x="54" y="825" width="307" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NXe-Yu-wEV" secondAttribute="bottom" constant="271" id="1Do-xu-OaR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NXe-Yu-wEV" secondAttribute="trailing" constant="70" id="36h-95-BAM"/>
-                            <constraint firstItem="6XO-XD-seg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="8L1-r7-3Nl"/>
-                            <constraint firstItem="NXe-Yu-wEV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="BrJ-r6-q1K"/>
-                            <constraint firstItem="NXe-Yu-wEV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="261" id="LX2-uM-MdT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6XO-XD-seg" secondAttribute="trailing" constant="79" id="VIX-b4-Nmv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6XO-XD-seg" secondAttribute="bottom" constant="36" id="jz4-em-55d"/>
-                            <constraint firstItem="6XO-XD-seg" firstAttribute="top" secondItem="NXe-Yu-wEV" secondAttribute="bottom" constant="220" id="m56-eW-reg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6XO-XD-seg" secondAttribute="bottom" constant="22" id="7ll-s6-B9Q"/>
+                            <constraint firstItem="6XO-XD-seg" firstAttribute="top" secondItem="NXe-Yu-wEV" secondAttribute="bottom" constant="177" id="IL7-ZU-nPv"/>
+                            <constraint firstItem="6XO-XD-seg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="U60-P9-M4f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NXe-Yu-wEV" secondAttribute="trailing" constant="36" id="fkm-ht-8Uh"/>
+                            <constraint firstItem="NXe-Yu-wEV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="fs3-Fc-rPO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NXe-Yu-wEV" secondAttribute="bottom" constant="214" id="iGi-aA-YiJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6XO-XD-seg" secondAttribute="trailing" constant="53" id="kdK-Z0-wi5"/>
+                            <constraint firstItem="NXe-Yu-wEV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="205" id="tXT-7u-7dz"/>
                         </constraints>
                     </view>
                 </viewController>
