@@ -10,6 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // 액션바 없애기
+        val actionBar = supportActionBar
+        actionBar?.hide()
+
         setSupportActionBar(toolBar)
     }
 }
