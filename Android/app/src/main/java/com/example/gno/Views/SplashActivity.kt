@@ -37,6 +37,7 @@ class SplashActivity : AppCompatActivity() {
             }, 2000) // 2초 후
         //}
         // 로그인이 되지 않았을 시
-        loginButton.isVisible = true
+        // loginButton.isVisible = true
+        loginButton.isVisible = false
     }
 }
