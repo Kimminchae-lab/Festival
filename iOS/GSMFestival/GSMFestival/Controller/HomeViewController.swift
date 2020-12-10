@@ -107,9 +107,6 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         return cell
     }
     
-    
-    
-    
 }
 
 
