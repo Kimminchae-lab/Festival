@@ -9,11 +9,10 @@ import UIKit
 import SideMenu
 
 
-public var items = ["Home","2-4"]
+var items = ["Home","2학년 전체", "2-4", "마이크로프로세서", "물리", "성공적인 직업생활"]
+var teacherItems = ["박순주", "이지은", "나백환", "봉만영", "김소형"]
 
 class HomeViewController: UIViewController {
-
-    
     
     var menu: SideMenuNavigationController?
     @IBOutlet var collectionView: UICollectionView!
@@ -28,7 +27,6 @@ class HomeViewController: UIViewController {
         
         SideMenuManager.default.leftMenuNavigationController = menu
         SideMenuManager.default.addPanGestureToPresent(toView: self.view)
-        
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -51,7 +49,7 @@ extension HomeViewController {
     
     // 콤포지셔널 레이아웃 설정
     func createCompositionalLayout() -> UICollectionViewLayout {
-        print("createCompositionalLayoutForFirst() called")
+        print("createCompositionalLayoutForSecond() called")
         // 콤포지셔널 레이아웃 생성
         let layout = UICollectionViewCompositionalLayout{
             // 만들게 되면 튜플 (키: 값, 키: 값) 의 묶음으로 들어옴 반환 하는 것은 NSCollectionLayoutSection 콜렉션 레이아웃 섹션을 반환해야함
@@ -64,7 +62,7 @@ extension HomeViewController {
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             
             // 아이템 간의 간격 설정
-            item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10)
             
             // 변경할 부분
             let groupHeight =  NSCollectionLayoutDimension.fractionalWidth(1/2)
@@ -77,6 +75,7 @@ extension HomeViewController {
             
             // 변경할 부분
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: grouSize, subitem: item, count: 2)
+            print("1")
             
             // 그룹으로 섹션 만들기
             let section = NSCollectionLayoutSection(group: group)
@@ -90,11 +89,8 @@ extension HomeViewController {
     }
 }
 
-extension HomeViewController: UICollectionViewDelegate {
-    
-}
 
-extension HomeViewController: UICollectionViewDataSource {
+extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count - 1
     }
@@ -102,6 +98,7 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath) as! CollectionViewCell
         cell.titleLable.text = items[indexPath.row + 1]
+        cell.teacherLable.text = teacherItems[indexPath.row]
         
         return cell
     }

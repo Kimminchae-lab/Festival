@@ -8,7 +8,8 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var titleLable: UILabel!
+    @IBOutlet weak var titleLable: UILabel!
+    @IBOutlet weak var teacherLable: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -16,5 +17,6 @@ class CollectionViewCell: UICollectionViewCell {
         contentView.layer.cornerRadius = 8
         contentView.backgroundColor = .systemGray6
         titleLable.textColor = .red
+        teacherLable.textColor = .black
     }
 }

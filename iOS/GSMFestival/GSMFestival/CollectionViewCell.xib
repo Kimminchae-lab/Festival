@@ -16,22 +16,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyX-EW-3P4">
-                        <rect key="frame" x="54" y="70" width="93" height="60"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ziq-Te-pND">
+                        <rect key="frame" x="16" y="156" width="168" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyX-EW-3P4">
+                        <rect key="frame" x="1" y="59" width="198" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="iyX-EW-3P4" firstAttribute="top" secondItem="yY5-qI-NTH" secondAttribute="top" constant="10" id="L1D-eQ-ExH"/>
-                    <constraint firstItem="iyX-EW-3P4" firstAttribute="leading" secondItem="yY5-qI-NTH" secondAttribute="leading" constant="10" id="Xr1-In-mKg"/>
-                    <constraint firstAttribute="trailing" secondItem="iyX-EW-3P4" secondAttribute="trailing" constant="10" id="Yjc-MF-5kw"/>
-                    <constraint firstAttribute="bottom" secondItem="iyX-EW-3P4" secondAttribute="bottom" constant="10" id="yV7-b7-tXS"/>
+                    <constraint firstItem="Ziq-Te-pND" firstAttribute="leading" secondItem="yY5-qI-NTH" secondAttribute="leading" constant="16" id="11c-c2-3Z8"/>
+                    <constraint firstAttribute="bottom" secondItem="iyX-EW-3P4" secondAttribute="bottom" constant="98" id="3ky-ud-epg"/>
+                    <constraint firstAttribute="trailing" secondItem="Ziq-Te-pND" secondAttribute="trailing" constant="16" id="5vW-go-kpI"/>
+                    <constraint firstItem="iyX-EW-3P4" firstAttribute="top" secondItem="yY5-qI-NTH" secondAttribute="top" constant="59" id="Tnv-at-2Ww"/>
+                    <constraint firstItem="iyX-EW-3P4" firstAttribute="leading" secondItem="yY5-qI-NTH" secondAttribute="leading" constant="1" id="faz-ed-g9H"/>
+                    <constraint firstAttribute="trailing" secondItem="iyX-EW-3P4" secondAttribute="trailing" constant="1" id="lFm-kF-UsN"/>
+                    <constraint firstItem="Ziq-Te-pND" firstAttribute="top" secondItem="iyX-EW-3P4" secondAttribute="bottom" constant="54" id="xn5-WX-prp"/>
+                    <constraint firstAttribute="bottom" secondItem="Ziq-Te-pND" secondAttribute="bottom" constant="21" id="ynY-Mt-x2R"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="200" height="200"/>
             <connections>
+                <outlet property="teacherLable" destination="Ziq-Te-pND" id="toq-CQ-cF4"/>
                 <outlet property="titleLable" destination="iyX-EW-3P4" id="opU-mO-V8d"/>
             </connections>
             <point key="canvasLocation" x="343.47826086956525" y="103.125"/>
