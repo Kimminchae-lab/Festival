@@ -97,8 +97,12 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectionViewCell.self), for: indexPath) as! CollectionViewCell
+        cell.layer.cornerRadius = 13
+        cell.titleLable.textColor = .white
+        cell.teacherLable.textColor = .white
         cell.titleLable.text = items[indexPath.row + 1]
         cell.teacherLable.text = teacherItems[indexPath.row]
+        cell.backgroundColor = .systemIndigo
         
         return cell
     }

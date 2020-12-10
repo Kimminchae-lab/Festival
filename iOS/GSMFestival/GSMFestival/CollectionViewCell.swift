@@ -14,9 +14,5 @@ class CollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        contentView.layer.cornerRadius = 8
-        contentView.backgroundColor = .systemGray6
-        titleLable.textColor = .red
-        teacherLable.textColor = .black
     }
 }
