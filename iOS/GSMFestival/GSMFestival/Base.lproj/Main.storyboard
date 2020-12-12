@@ -11,7 +11,7 @@
         <!--더보기-->
         <scene sceneID="E8K-x1-5yI">
             <objects>
-                <viewController id="bVy-wO-gpL" sceneMemberID="viewController">
+                <viewController id="bVy-wO-gpL" customClass="AdditionalMenuViewController" customModule="GSMFestival" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mpk-Pf-L61">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="-1378" y="2279"/>
         </scene>
-        <!--Home-->
+        <!--공지-->
         <scene sceneID="O71-fU-aZX">
             <objects>
                 <viewController id="dbb-TS-5UV" customClass="HomeViewController" customModule="GSMFestival" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,7 +97,7 @@
                             <constraint firstItem="MvW-J3-AAG" firstAttribute="bottom" secondItem="EIh-xa-anp" secondAttribute="bottom" id="jkN-CF-dLB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="DGT-6m-9pd">
+                    <navigationItem key="navigationItem" title="공지" id="DGT-6m-9pd">
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="GYu-QF-5vW">
                             <connections>
                                 <action selector="didTapMenu:" destination="dbb-TS-5UV" id="87u-sb-j8q"/>
