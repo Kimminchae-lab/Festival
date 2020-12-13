@@ -1,5 +1,5 @@
 //
-//  TableViewController.swift
+//  SideMenuViewController.swift
 //  GSMFestival
 //
 //  Created by 조주혁 on 2020/11/18.
@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class TableViewController: UITableViewController {
+class SideMenuViewController: UITableViewController {
     
     let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
     

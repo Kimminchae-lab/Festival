@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menu = SideMenuNavigationController(rootViewController: TableViewController())
+        menu = SideMenuNavigationController(rootViewController: SideMenuViewController())
         menu?.leftSide = true
         menu?.setNavigationBarHidden(true, animated: false)
         
@@ -107,6 +107,9 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
 }
 
 
