@@ -1,11 +1,19 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'GSMFestival' do
+target 'GSMFestival' do 
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+
 
   # Pods for GSMFestival
   pod 'SideMenu'
   pod 'FSCalendar'
+
+end
+  post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+  end
 end

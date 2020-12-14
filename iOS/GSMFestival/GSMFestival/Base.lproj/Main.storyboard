@@ -119,25 +119,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeU-sz-bF6" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qeU-sz-bF6" secondAttribute="trailing" id="5aw-9q-B1c"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qeU-sz-bF6" secondAttribute="bottom" id="Kgi-hf-mqt"/>
-                            <constraint firstItem="qeU-sz-bF6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UP7-rM-DmB"/>
-                            <constraint firstItem="qeU-sz-bF6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qCo-D1-VO9"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="학사일정" id="51a-Lx-ucE"/>
-                    <connections>
-                        <outlet property="calendarView" destination="qeU-sz-bF6" id="pDd-mH-4Qw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

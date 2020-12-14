@@ -19,10 +19,12 @@
 		BDA2E8FC257F995C002ECD2A /* SchoolScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2E8FB257F995C002ECD2A /* SchoolScheduleViewController.swift */; };
 		BDA2F6FB25653E9400CB9A7F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F6FA25653E9400CB9A7F /* SideMenuViewController.swift */; };
 		BDA2F6FF2565659900CB9A7F /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */; };
+		D2D3B9D4F3D07CAE63369020 /* Pods_GSMFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACDFE46B5733FD77016BF3C /* Pods_GSMFestival.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37B793DA328CD97A5FFAAD98 /* Pods-GSMFestival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMFestival.release.xcconfig"; path = "Target Support Files/Pods-GSMFestival/Pods-GSMFestival.release.xcconfig"; sourceTree = "<group>"; };
+		4ACDFE46B5733FD77016BF3C /* Pods_GSMFestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSMFestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		864F02D4C4C2F685D6A56724 /* Pods-GSMFestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMFestival.debug.xcconfig"; path = "Target Support Files/Pods-GSMFestival/Pods-GSMFestival.debug.xcconfig"; sourceTree = "<group>"; };
 		BD08279A25850C6F00EA6324 /* AdditionalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalMenuViewController.swift; sourceTree = "<group>"; };
 		BD21662725694B1B00EF984C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D3B9D4F3D07CAE63369020 /* Pods_GSMFestival.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +63,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A172536F0DB9D9EB53BAEE1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ACDFE46B5733FD77016BF3C /* Pods_GSMFestival.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD7033E02559847000D54CE6 = {
 			isa = PBXGroup;
 			children = (
 				BD7033EB2559847000D54CE6 /* GSMFestival */,
 				BD7033EA2559847000D54CE6 /* Products */,
 				8B1CD0901B7BA1195281FEA1 /* Pods */,
+				A172536F0DB9D9EB53BAEE1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
