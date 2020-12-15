@@ -36,6 +36,15 @@ class SideMenuViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        print("\(indexPath.row)")
+        
+        if indexPath.row >= 1 {
+            let vc = ClassViewController()
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            present(nav, animated: true, completion: nil)
+        }
+        
         
     }
 }
