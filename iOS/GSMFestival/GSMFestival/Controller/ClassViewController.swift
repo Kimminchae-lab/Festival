@@ -13,7 +13,6 @@ class ClassViewController: UIViewController {
         super.viewDidLoad()
 
         
-        view.backgroundColor = .systemIndigo
     }
     
 

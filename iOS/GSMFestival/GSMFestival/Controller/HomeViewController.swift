@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
         // 콜렉션뷰의 콜렉션뷰 레이아웃을 설정한다.
         self.collectionView.collectionViewLayout = createCompositionalLayout()
     }
-
+    
     @IBAction func didTapMenu(_ sender: Any) {
         present(menu!, animated: true)
     }
@@ -71,7 +71,7 @@ extension HomeViewController {
             let grouSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: groupHeight)
             
             // 그룹사이즈로 그룹 만들기
-//            let group = NSCollectionLayoutGroup.horizontal(layoutSize: grouSize, subitems: [item, item, item])
+            //            let group = NSCollectionLayoutGroup.horizontal(layoutSize: grouSize, subitems: [item, item, item])
             
             // 변경할 부분
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: grouSize, subitem: item, count: 2)
@@ -79,7 +79,7 @@ extension HomeViewController {
             
             // 그룹으로 섹션 만들기
             let section = NSCollectionLayoutSection(group: group)
-//            section.orthogonalScrollingBehavior = .groupPaging
+            //            section.orthogonalScrollingBehavior = .groupPaging
             
             // 섹션에 대한 간격 설정
             section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
@@ -91,6 +91,13 @@ extension HomeViewController {
 
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func goMainPage(){
+        guard let goMain = self.storyboard?.instantiateViewController(identifier: "ClassViewController") else { return }
+        goMain.modalPresentationStyle = .fullScreen
+        self.present(goMain, animated: true)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count - 1
     }
@@ -108,7 +115,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        goMainPage()
     }
 }
 
