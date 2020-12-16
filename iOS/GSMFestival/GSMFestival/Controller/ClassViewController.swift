@@ -15,5 +15,8 @@ class ClassViewController: UIViewController {
         
     }
     
-
+    @IBAction func backBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
