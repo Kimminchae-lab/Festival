@@ -12,7 +12,7 @@ class ClassViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        view.backgroundColor = .gray
     }
     
     @IBAction func backBtn(_ sender: Any) {
