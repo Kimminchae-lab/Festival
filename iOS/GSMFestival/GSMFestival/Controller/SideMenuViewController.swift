@@ -38,16 +38,16 @@ class SideMenuViewController: UITableViewController {
         
         print("\(indexPath.row)")
         
-        if indexPath.row >= 1 {
-            
-            titleItem = items[indexPath.row]
-            
-            let vc = ClassViewController()
-            let nav = UINavigationController(rootViewController: vc)
-            nav.modalPresentationStyle = .fullScreen
-            present(nav,animated: true)
-            
-        }
+        
+        
+        titleItem = items[indexPath.row]
+        
+        let vc = ClassViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav,animated: true)
+        
+        
         
         
     }

@@ -21,6 +21,7 @@ class ClassViewController: UIViewController {
         title = titleItem
         
         
+        
     }
     
     @objc func back() {
