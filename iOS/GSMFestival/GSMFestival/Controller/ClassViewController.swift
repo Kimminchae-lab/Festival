@@ -9,15 +9,24 @@ import UIKit
 
 class ClassViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(back))
+        
 
         view.backgroundColor = .gray
         title = titleItem
+        
+        
     }
     
-    @IBAction func backBtn(_ sender: Any) {
+    @objc func back() {
         dismiss(animated: true, completion: nil)
     }
+    
+    
     
 }

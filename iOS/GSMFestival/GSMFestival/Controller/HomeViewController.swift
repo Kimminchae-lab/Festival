@@ -93,11 +93,11 @@ extension HomeViewController {
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
-    func goMainPage(){
-        guard let goMain = self.storyboard?.instantiateViewController(identifier: "ClassViewController") else { return }
-        goMain.modalPresentationStyle = .fullScreen
-        self.present(goMain, animated: true)
-    }
+//    func goMainPage(){
+//        guard let goMain = self.storyboard?.instantiateViewController(identifier: "ClassViewController") else { return }
+//        goMain.modalPresentationStyle = .fullScreen
+//        self.present(goMain, animated: true)
+//    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count - 1
@@ -117,7 +117,11 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         titleItem = items[indexPath.row + 1]
-        goMainPage()
+//        goMainPage()
+        let vc = ClassViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav,animated: true)
         
     }
 }
