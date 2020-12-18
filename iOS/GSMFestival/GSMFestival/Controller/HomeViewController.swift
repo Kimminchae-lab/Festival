@@ -11,6 +11,7 @@ import SideMenu
 
 var items = ["Home","2학년 전체", "2-4", "마이크로프로세서", "물리", "성공적인 직업생활"]
 var teacherItems = ["박순주", "이지은", "나백환", "봉만영", "김소형"]
+var titleItem = ""
 
 class HomeViewController: UIViewController {
     
@@ -115,7 +116,9 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        titleItem = items[indexPath.row + 1]
         goMainPage()
+        
     }
 }
 

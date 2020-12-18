@@ -13,6 +13,7 @@ class ClassViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .gray
+        title = titleItem
     }
     
     @IBAction func backBtn(_ sender: Any) {

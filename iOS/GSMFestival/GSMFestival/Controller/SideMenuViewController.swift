@@ -40,6 +40,8 @@ class SideMenuViewController: UITableViewController {
         
         if indexPath.row >= 1 {
             
+            titleItem = items[indexPath.row]
+            
             let vc = ClassViewController()
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
