@@ -9,7 +9,11 @@ import UIKit
 
 class ClassViewController: UIViewController {
 
-    
+    var tableView: UITableView = {
+        let tableview = UITableView()
+        
+        return tableview
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +23,8 @@ class ClassViewController: UIViewController {
 
         view.backgroundColor = .gray
         title = titleItem
-        
+        tableView.delegate = self
+        tableView.dataSource = self
         
         
     }
@@ -28,6 +33,18 @@ class ClassViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    
+    
+}
+
+extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return
+    }
     
     
 }
