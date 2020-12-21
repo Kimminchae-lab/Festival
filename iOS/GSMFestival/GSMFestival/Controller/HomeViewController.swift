@@ -9,8 +9,9 @@ import UIKit
 import SideMenu
 
 
-var items = ["Home","2학년 전체", "2-4", "마이크로프로세서", "물리", "성공적인 직업생활"]
+var items = ["2학년 전체", "2-4", "마이크로프로세서", "물리", "성공적인 직업생활"]
 var teacherItems = ["박순주", "이지은", "나백환", "봉만영", "김소형"]
+var titleItem = ""
 
 class HomeViewController: UIViewController {
     
@@ -92,14 +93,14 @@ extension HomeViewController {
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
-    func goMainPage(){
-        guard let goMain = self.storyboard?.instantiateViewController(identifier: "ClassViewController") else { return }
-        goMain.modalPresentationStyle = .fullScreen
-        self.present(goMain, animated: true)
-    }
+//    func goMainPage(){
+//        guard let goMain = self.storyboard?.instantiateViewController(identifier: "ClassViewController") else { return }
+//        goMain.modalPresentationStyle = .fullScreen
+//        self.present(goMain, animated: true)
+//    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count - 1
+        return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -107,7 +108,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         cell.layer.cornerRadius = 13
         cell.titleLable.textColor = .white
         cell.teacherLable.textColor = .white
-        cell.titleLable.text = items[indexPath.row + 1]
+        cell.titleLable.text = items[indexPath.row ]
         cell.teacherLable.text = teacherItems[indexPath.row]
         cell.backgroundColor = .systemIndigo
         
@@ -115,7 +116,13 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        goMainPage()
+        titleItem = items[indexPath.row ]
+//        goMainPage()
+        let vc = ClassViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav,animated: true)
+        
     }
 }
 
