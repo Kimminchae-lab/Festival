@@ -18,6 +18,15 @@ class ClassTableViewCell: UITableViewCell {
         return label
     }()
     
+    var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "jeasungLEE"
+        label.textColor = UIColor(red: 158/255, green: 160/255, blue: 161/255, alpha: 1.0)
+        label.font = UIFont.systemFont(ofSize: 10)
+        return label
+    }()
+    
     override func updateConstraints() {
         if !isUpdateConstraint {
             isUpdateConstraint = true
