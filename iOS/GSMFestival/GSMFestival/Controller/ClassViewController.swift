@@ -8,7 +8,7 @@
 import UIKit
 
 class ClassViewController: UIViewController {
-
+    var isUpdateConstraint: Bool = false
     var tableView: UITableView = {
         let tableview = UITableView()
         tableview.translatesAutoresizingMaskIntoConstraints = false
@@ -20,18 +20,24 @@ class ClassViewController: UIViewController {
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(back))
         
-
-        view.backgroundColor = .gray
         title = titleItem
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    override func updateViewConstraints() {
+        if !isUpdateConstraint {
+            isUpdateConstraint = true
+            
+            view.addSubview(tableView)
+            
+            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+            tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
+            tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         
-        view.addSubview(tableView)
-        
-        tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+        }
+        super.updateViewConstraints()
     }
     
     @objc func back() {
@@ -41,13 +47,15 @@ class ClassViewController: UIViewController {
 
 extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = ClassTableViewCell()
+        cell.updateConstraintsIfNeeded()
+        cell.titleLable.text = "gggg"
         
-        
-        return
+        return cell
     }
     
     
