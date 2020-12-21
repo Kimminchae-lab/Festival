@@ -54,7 +54,7 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ClassTableViewCell()
         cell.updateConstraintsIfNeeded()
-        cell.titleLable.text = "gggg"
+        cell.titleLable.text = "13"
         print("gggg")
         return cell
     }

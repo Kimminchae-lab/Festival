@@ -14,6 +14,7 @@ class ClassTableViewCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16)
+        label.text = "gggg"
         return label
     }()
     
