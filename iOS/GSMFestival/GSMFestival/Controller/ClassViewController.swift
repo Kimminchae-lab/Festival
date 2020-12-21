@@ -23,6 +23,7 @@ class ClassViewController: UIViewController {
         title = titleItem
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView()
     }
     
     override func updateViewConstraints() {
@@ -54,7 +55,7 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = ClassTableViewCell()
         cell.updateConstraintsIfNeeded()
         cell.titleLable.text = "gggg"
-        
+        print("gggg")
         return cell
     }
     

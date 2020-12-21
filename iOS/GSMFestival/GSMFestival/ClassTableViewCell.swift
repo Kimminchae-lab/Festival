@@ -13,14 +13,14 @@ class ClassTableViewCell: UITableViewCell {
     var titleLable: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        
+        label.font = UIFont.systemFont(ofSize: 16)
         return label
     }()
     
     override func updateConstraints() {
         if !isUpdateConstraint {
             isUpdateConstraint = true
-            
+            print("as")
             addSubview(titleLable)
             
             titleLable.topAnchor.constraint(equalTo: topAnchor, constant: 15).isActive = true
