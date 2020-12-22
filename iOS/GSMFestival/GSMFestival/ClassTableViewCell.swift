@@ -13,8 +13,7 @@ class ClassTableViewCell: UITableViewCell {
     var titleLable: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 16)
-        label.text = "gggg"
+        label.font = UIFont.systemFont(ofSize: 23)
         return label
     }()
     
@@ -34,9 +33,9 @@ class ClassTableViewCell: UITableViewCell {
             addSubview(titleLable)
             
             titleLable.topAnchor.constraint(equalTo: topAnchor, constant: 15).isActive = true
-            titleLable.leftAnchor.constraint(equalTo: leftAnchor, constant: 15).isActive = true
-            titleLable.rightAnchor.constraint(equalTo: rightAnchor, constant: 15).isActive = true
-            titleLable.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 67).isActive = true
+            titleLable.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15).isActive = true
+            titleLable.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 15).isActive = true
+            titleLable.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -67).isActive = true
         }
         
         super.updateConstraints()

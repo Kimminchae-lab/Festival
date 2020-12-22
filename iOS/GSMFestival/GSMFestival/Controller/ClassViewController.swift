@@ -54,10 +54,13 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ClassTableViewCell()
         cell.updateConstraintsIfNeeded()
-        cell.titleLable.text = "13"
+        cell.titleLable.text = "13asefawefawefaewfr"
         print("gggg")
         return cell
     }
     
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 200
+//    }
     
 }
