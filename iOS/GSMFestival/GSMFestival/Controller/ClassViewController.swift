@@ -36,7 +36,6 @@ class ClassViewController: UIViewController {
             tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
             tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-        
         }
         super.updateViewConstraints()
     }
@@ -58,9 +57,5 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
         print("gggg")
         return cell
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 200
-//    }
     
 }
