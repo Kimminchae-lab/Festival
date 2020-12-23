@@ -53,7 +53,8 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ClassTableViewCell()
         cell.updateConstraintsIfNeeded()
-        cell.titleLable.text = "13asefawefawefaewfr"
+        cell.titleLable.text = "배움터지킴이 선생님 만족도 설문조사"
+        cell.dateLabel.text = "2020-12-16"
         print("gggg")
         return cell
     }

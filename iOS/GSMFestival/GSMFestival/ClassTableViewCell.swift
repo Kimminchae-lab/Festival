@@ -17,12 +17,11 @@ class ClassTableViewCell: UITableViewCell {
         return label
     }()
     
-    var descriptionLabel: UILabel = {
+    var dateLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "jeasungLEE"
         label.textColor = UIColor(red: 158/255, green: 160/255, blue: 161/255, alpha: 1.0)
-        label.font = UIFont.systemFont(ofSize: 10)
+        label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     
@@ -31,11 +30,17 @@ class ClassTableViewCell: UITableViewCell {
             isUpdateConstraint = true
             print("as")
             addSubview(titleLable)
+            addSubview(dateLabel)
             
             titleLable.topAnchor.constraint(equalTo: topAnchor, constant: 15).isActive = true
-            titleLable.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15).isActive = true
-            titleLable.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 15).isActive = true
+            titleLable.leftAnchor.constraint(equalTo: leftAnchor, constant: 15).isActive = true
+            titleLable.rightAnchor.constraint(equalTo: rightAnchor, constant: 15).isActive = true
             titleLable.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -67).isActive = true
+            
+            dateLabel.topAnchor.constraint(equalTo: titleLable.bottomAnchor, constant: 0).isActive = true
+            dateLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 15).isActive = true
+            dateLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 200).isActive = true
+            dateLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50).isActive = true
         }
         
         super.updateConstraints()
