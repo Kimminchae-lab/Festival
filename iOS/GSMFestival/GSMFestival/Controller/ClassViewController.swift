@@ -23,6 +23,7 @@ class ClassViewController: UIViewController {
         title = titleItem
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView()
     }
     
     override func updateViewConstraints() {
@@ -35,7 +36,6 @@ class ClassViewController: UIViewController {
             tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
             tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-        
         }
         super.updateViewConstraints()
     }
@@ -53,10 +53,10 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ClassTableViewCell()
         cell.updateConstraintsIfNeeded()
-        cell.titleLable.text = "gggg"
-        
+        cell.titleLable.text = "배움터지킴이 선생님 만족도 설문조사"
+        cell.dateLabel.text = "2020-12-16"
+        print("gggg")
         return cell
     }
-    
     
 }
