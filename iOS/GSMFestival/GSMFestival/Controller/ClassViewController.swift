@@ -55,6 +55,8 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
         cell.updateConstraintsIfNeeded()
         cell.titleLable.text = "배움터지킴이 선생님 만족도 설문조사"
         cell.dateLabel.text = "2020-12-16"
+        cell.layer.cornerRadius = 35
+        cell.backgroundColor = .systemGray6
         print("gggg")
         return cell
     }
