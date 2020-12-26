@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BD08279B25850C6F00EA6324 /* AdditionalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD08279A25850C6F00EA6324 /* AdditionalMenuViewController.swift */; };
 		BD21662825694B1B00EF984C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21662725694B1B00EF984C /* CollectionViewCell.swift */; };
-		BD21662B25694B8500EF984C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD21662A25694B8500EF984C /* CollectionViewCell.xib */; };
 		BD7033ED2559847000D54CE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033EC2559847000D54CE6 /* AppDelegate.swift */; };
 		BD7033EF2559847000D54CE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033EE2559847000D54CE6 /* SceneDelegate.swift */; };
 		BD7033F12559847000D54CE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033F02559847000D54CE6 /* HomeViewController.swift */; };
@@ -29,7 +28,6 @@
 		864F02D4C4C2F685D6A56724 /* Pods-GSMFestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMFestival.debug.xcconfig"; path = "Target Support Files/Pods-GSMFestival/Pods-GSMFestival.debug.xcconfig"; sourceTree = "<group>"; };
 		BD08279A25850C6F00EA6324 /* AdditionalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalMenuViewController.swift; sourceTree = "<group>"; };
 		BD21662725694B1B00EF984C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		BD21662A25694B8500EF984C /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		BD7033E92559847000D54CE6 /* GSMFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSMFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7033EC2559847000D54CE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7033EE2559847000D54CE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 				BDA2E8F4257F7B03002ECD2A /* Controller */,
 				BDA55B8B25909994005979DE /* ClassTableViewCell.swift */,
 				BD21662725694B1B00EF984C /* CollectionViewCell.swift */,
-				BD21662A25694B8500EF984C /* CollectionViewCell.xib */,
 				BD7033F22559847000D54CE6 /* Main.storyboard */,
 				BD7033F72559847100D54CE6 /* LaunchScreen.storyboard */,
 				BD7033F52559847100D54CE6 /* Assets.xcassets */,
@@ -181,7 +178,6 @@
 			files = (
 				BD7033F92559847100D54CE6 /* LaunchScreen.storyboard in Resources */,
 				BD7033F62559847100D54CE6 /* Assets.xcassets in Resources */,
-				BD21662B25694B8500EF984C /* CollectionViewCell.xib in Resources */,
 				BD7033F42559847000D54CE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
