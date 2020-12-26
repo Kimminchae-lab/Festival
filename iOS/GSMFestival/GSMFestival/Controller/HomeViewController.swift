@@ -66,7 +66,7 @@ extension HomeViewController {
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
             // 아이템 간의 간격 설정
-            item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10)
 
             // 변경할 부분
             let groupHeight =  NSCollectionLayoutDimension.fractionalWidth(1/2)
