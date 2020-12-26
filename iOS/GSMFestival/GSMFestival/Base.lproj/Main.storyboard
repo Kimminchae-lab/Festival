@@ -62,9 +62,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EIh-xa-anp">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EIh-xa-anp">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="TLe-X8-xjN">
                                     <size key="itemSize" width="150" height="150"/>
@@ -116,6 +115,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MvW-J3-AAG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EIh-xa-anp" firstAttribute="leading" secondItem="MvW-J3-AAG" secondAttribute="leading" id="L4M-ge-Erh"/>
+                            <constraint firstItem="EIh-xa-anp" firstAttribute="trailing" secondItem="MvW-J3-AAG" secondAttribute="trailing" id="ZGX-4z-SY2"/>
+                            <constraint firstItem="EIh-xa-anp" firstAttribute="top" secondItem="MvW-J3-AAG" secondAttribute="top" id="jiP-2e-OD7"/>
+                            <constraint firstItem="MvW-J3-AAG" firstAttribute="bottom" secondItem="EIh-xa-anp" secondAttribute="bottom" id="lZE-Hj-xpL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="공지" id="DGT-6m-9pd">
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="GYu-QF-5vW">
@@ -140,7 +145,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-XP-7fN" customClass="FSCalendar">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdJ-tT-yoY" customClass="FSCalendar">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -148,16 +153,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7Zz-XP-7fN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="42B-AH-HsW"/>
-                            <constraint firstItem="7Zz-XP-7fN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Od-CW-OrJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Zz-XP-7fN" secondAttribute="bottom" id="lPE-4y-yVy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Zz-XP-7fN" secondAttribute="trailing" id="rhL-Gk-NQU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gdJ-tT-yoY" secondAttribute="trailing" id="FpB-RE-wLD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gdJ-tT-yoY" secondAttribute="bottom" id="YaM-mz-k0j"/>
+                            <constraint firstItem="gdJ-tT-yoY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YvF-KN-xuS"/>
+                            <constraint firstItem="gdJ-tT-yoY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZZw-S3-DVa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="학사일정" id="51a-Lx-ucE"/>
-                    <connections>
-                        <outlet property="calendarView" destination="7Zz-XP-7fN" id="1CW-vo-6YX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
