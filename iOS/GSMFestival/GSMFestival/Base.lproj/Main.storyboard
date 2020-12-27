@@ -146,17 +146,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrQ-5P-PUa" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="543"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이벤트 없음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJW-vQ-BOU">
+                                <rect key="frame" x="20" y="691" width="188" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TrQ-5P-PUa" secondAttribute="trailing" id="4et-WN-LoI"/>
-                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G9u-Zg-g9R"/>
-                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PhY-hi-NV8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TrQ-5P-PUa" secondAttribute="bottom" id="YB5-Sl-DLr"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gDo-Mk-HSN"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ofE-eP-Hp0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TrQ-5P-PUa" secondAttribute="bottom" constant="130" id="pCf-9a-BIh"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vZh-YS-jIZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="학사일정" id="51a-Lx-ucE"/>
@@ -166,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-501" y="1594"/>
+            <point key="canvasLocation" x="-501.44927536231887" y="1593.75"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="LQg-MM-KOG">

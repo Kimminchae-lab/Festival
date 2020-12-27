@@ -41,10 +41,28 @@ class SchoolScheduleViewController: UIViewController {
 extension SchoolScheduleViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         print(dateFormatter.string(from: date) + " 선택됨")
+        
     }
     
     func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
         print(dateFormatter.string(from: date) + " 해제됨")
     }
+    
+    func calendar(_ calendar: FSCalendar, subtitleFor date: Date) -> String? {
+        switch dateFormatter.string(from: date) {
+        case dateFormatter.string(from: Date()):
+            return "오늘"
+        case "2021-01-08":
+            return "제 4회 GSM 페스티벌"
+        case "2020-06-23":
+            return "지각"
+        case "2020-06-24":
+            return "결근"
+        default:
+            return nil
+        }
+    }
+    
+    
 }
 
