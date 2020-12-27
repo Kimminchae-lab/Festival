@@ -9,8 +9,8 @@ import UIKit
 import SideMenu
 
 
-var items = ["2학년 전체", "2-4ㅁㄴㅇㄹㅁㄴㅇㄹ", "2-4 마이크로프로세서", "물리ㅁㄴㅇㄹㅁㄴ", "2- 4 성공적인 직업생활","ㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴㄹ", "ㅁㄴㅇㄹㅁㄴㅇㄹㅁㅇㄹㄹㄹ"]
-var teacherItems = ["박순주", "이지은", "나백환", "봉만영", "김소형", "ㅁㄴㅇ", "ㅁㄴㅇ"]
+var items = ["2학년 전체", "2-4", "2-4 마이크로프로세서", "물리", "2- 4 성공적인 직업생활"]
+var teacherItems = ["박순주", "이지은", "나백환", "봉만영", "김소형"]
 var titleItem = ""
 
 class HomeViewController: UIViewController {
@@ -32,14 +32,6 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        
-        
-        // 닙파일을 가져온다
-//        let CollectionViewCellNib = UINib(nibName: String(describing: CollectionViewCell.self), bundle: nil)
-        
-        // 가져온 닙파일로 콜렉션뷰에 쎌로 등록한다
-//        self.collectionView.register(CollectionViewCellNib, forCellWithReuseIdentifier: String(describing: CollectionViewCell.self))
-        // 콜렉션뷰의 콜렉션뷰 레이아웃을 설정한다.
         self.collectionView.collectionViewLayout = createCompositionalLayout()
     }
     
@@ -95,12 +87,6 @@ extension HomeViewController {
 
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-    
-//    func goMainPage(){
-//        guard let goMain = self.storyboard?.instantiateViewController(identifier: "ClassViewController") else { return }
-//        goMain.modalPresentationStyle = .fullScreen
-//        self.present(goMain, animated: true)
-//    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count

@@ -17,8 +17,6 @@ class SideMenuViewController: UITableViewController {
         super.viewDidLoad()
         tableView.backgroundColor = darkColor
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
-        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,8 +35,6 @@ class SideMenuViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
         print("\(indexPath.row)")
-        
-        
         
         titleItem = items[indexPath.row]
         

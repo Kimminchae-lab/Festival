@@ -145,7 +145,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdJ-tT-yoY" customClass="FSCalendar">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrQ-5P-PUa" customClass="FSCalendar">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -153,13 +153,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gdJ-tT-yoY" secondAttribute="trailing" id="FpB-RE-wLD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gdJ-tT-yoY" secondAttribute="bottom" id="YaM-mz-k0j"/>
-                            <constraint firstItem="gdJ-tT-yoY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YvF-KN-xuS"/>
-                            <constraint firstItem="gdJ-tT-yoY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZZw-S3-DVa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TrQ-5P-PUa" secondAttribute="trailing" id="4et-WN-LoI"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G9u-Zg-g9R"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PhY-hi-NV8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TrQ-5P-PUa" secondAttribute="bottom" id="YB5-Sl-DLr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="학사일정" id="51a-Lx-ucE"/>
+                    <connections>
+                        <outlet property="calendarView" destination="TrQ-5P-PUa" id="knr-Pq-d30"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
