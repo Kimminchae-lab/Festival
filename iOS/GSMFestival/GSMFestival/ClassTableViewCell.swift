@@ -42,8 +42,8 @@ class ClassTableViewCell: UITableViewCell {
             cellView.addSubview(dateLabel)
             
             cellView.topAnchor.constraint(equalTo: topAnchor, constant: 10).isActive = true
-            cellView.rightAnchor.constraint(equalTo: rightAnchor, constant: -28).isActive = true
-            cellView.leftAnchor.constraint(equalTo: leftAnchor, constant: 28).isActive = true
+            cellView.rightAnchor.constraint(equalTo: rightAnchor, constant: -10).isActive = true
+            cellView.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
             cellView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10).isActive = true
             
             titleLable.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 10).isActive = true
