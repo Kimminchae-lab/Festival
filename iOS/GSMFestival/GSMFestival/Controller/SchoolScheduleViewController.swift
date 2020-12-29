@@ -12,6 +12,7 @@ class SchoolScheduleViewController: UIViewController {
     
     let dateFormatter = DateFormatter()
     
+    @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var calendarView: FSCalendar! {
         didSet{
             calendarView.delegate = self
