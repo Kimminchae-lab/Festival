@@ -19,6 +19,7 @@
 		BDA2F6FB25653E9400CB9A7F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F6FA25653E9400CB9A7F /* SideMenuViewController.swift */; };
 		BDA2F6FF2565659900CB9A7F /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */; };
 		BDA55B8C25909994005979DE /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA55B8B25909994005979DE /* ClassTableViewCell.swift */; };
+		BDE9E160259DE4AD00F90C64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE9E15F259DE4AD00F90C64 /* LoginViewController.swift */; };
 		D2D3B9D4F3D07CAE63369020 /* Pods_GSMFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACDFE46B5733FD77016BF3C /* Pods_GSMFestival.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		BDA2F6FA25653E9400CB9A7F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
 		BDA55B8B25909994005979DE /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		BDE9E15F259DE4AD00F90C64 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */,
 				BDA2E8FB257F995C002ECD2A /* SchoolScheduleViewController.swift */,
 				BD08279A25850C6F00EA6324 /* AdditionalMenuViewController.swift */,
+				BDE9E15F259DE4AD00F90C64 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				BD7033EF2559847000D54CE6 /* SceneDelegate.swift in Sources */,
 				BDA2F6FB25653E9400CB9A7F /* SideMenuViewController.swift in Sources */,
 				BDA2E8FC257F995C002ECD2A /* SchoolScheduleViewController.swift in Sources */,
+				BDE9E160259DE4AD00F90C64 /* LoginViewController.swift in Sources */,
 				BDA55B8C25909994005979DE /* ClassTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
