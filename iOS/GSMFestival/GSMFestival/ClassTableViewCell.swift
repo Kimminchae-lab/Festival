@@ -49,12 +49,12 @@ class ClassTableViewCell: UITableViewCell {
             titleLable.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 10).isActive = true
             titleLable.leadingAnchor.constraint(equalTo: cellView.leadingAnchor, constant: 10).isActive = true
             titleLable.trailingAnchor.constraint(equalTo: cellView.trailingAnchor, constant: -10).isActive = true
-            titleLable.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -67).isActive = true
+            titleLable.bottomAnchor.constraint(equalTo: cellView.bottomAnchor, constant: -68.5).isActive = true
             
             dateLabel.topAnchor.constraint(equalTo: titleLable.bottomAnchor, constant: 0).isActive = true
             dateLabel.leadingAnchor.constraint(equalTo: cellView.leadingAnchor, constant: 10).isActive = true
-            dateLabel.trailingAnchor.constraint(equalTo: cellView.trailingAnchor, constant: -100).isActive = true
-            dateLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50).isActive = true
+            dateLabel.trailingAnchor.constraint(equalTo: cellView.trailingAnchor, constant: -10).isActive = true
+            dateLabel.bottomAnchor.constraint(equalTo: cellView.bottomAnchor, constant: -47.5).isActive = true
         }
         
         super.updateConstraints()

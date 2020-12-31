@@ -16,14 +16,72 @@
                     <view key="view" contentMode="scaleToFill" id="Mpk-Pf-L61">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k8y-6C-apO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="119" id="HCJ-GD-XmW">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="119"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HCJ-GD-XmW" id="o6e-02-qQD">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLu-Ub-KVc">
+                                                    <rect key="frame" x="10" y="10" width="394" height="99"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfO-rV-4sx">
+                                                            <rect key="frame" x="10" y="10" width="374" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvK-VE-4BV">
+                                                            <rect key="frame" x="10" y="30.5" width="374" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="kfO-rV-4sx" firstAttribute="top" secondItem="wLu-Ub-KVc" secondAttribute="top" constant="10" id="2rf-x1-dSl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="kvK-VE-4BV" secondAttribute="trailing" constant="10" id="84g-Ue-bTz"/>
+                                                        <constraint firstAttribute="bottom" secondItem="kvK-VE-4BV" secondAttribute="bottom" constant="47.5" id="EOU-6U-hWF"/>
+                                                        <constraint firstItem="kvK-VE-4BV" firstAttribute="top" secondItem="kfO-rV-4sx" secondAttribute="bottom" id="L0J-jw-jIw"/>
+                                                        <constraint firstAttribute="bottom" secondItem="kfO-rV-4sx" secondAttribute="bottom" constant="68.5" id="YrV-sQ-lpo"/>
+                                                        <constraint firstItem="kvK-VE-4BV" firstAttribute="leading" secondItem="wLu-Ub-KVc" secondAttribute="leading" constant="10" id="ZJi-hN-CP7"/>
+                                                        <constraint firstItem="kfO-rV-4sx" firstAttribute="leading" secondItem="wLu-Ub-KVc" secondAttribute="leading" constant="10" id="pUo-dn-EC0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="kfO-rV-4sx" secondAttribute="trailing" constant="10" id="xL0-ni-BEe"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wLu-Ub-KVc" firstAttribute="top" secondItem="o6e-02-qQD" secondAttribute="top" constant="10" id="0O0-uN-BtG"/>
+                                                <constraint firstAttribute="trailing" secondItem="wLu-Ub-KVc" secondAttribute="trailing" constant="10" id="qvT-r5-Evi"/>
+                                                <constraint firstAttribute="bottom" secondItem="wLu-Ub-KVc" secondAttribute="bottom" constant="10" id="tmA-pL-NtB"/>
+                                                <constraint firstItem="wLu-Ub-KVc" firstAttribute="leading" secondItem="o6e-02-qQD" secondAttribute="leading" constant="10" id="unA-9a-QQm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wGl-Zq-QWZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k8y-6C-apO" firstAttribute="leading" secondItem="wGl-Zq-QWZ" secondAttribute="leading" id="36p-Yv-G8F"/>
+                            <constraint firstItem="k8y-6C-apO" firstAttribute="top" secondItem="wGl-Zq-QWZ" secondAttribute="top" id="5Cv-Uu-Wxp"/>
+                            <constraint firstItem="wGl-Zq-QWZ" firstAttribute="bottom" secondItem="k8y-6C-apO" secondAttribute="bottom" id="gaW-U3-DWT"/>
+                            <constraint firstItem="wGl-Zq-QWZ" firstAttribute="trailing" secondItem="k8y-6C-apO" secondAttribute="trailing" id="r3w-y0-vXv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="더보기" id="Pc9-Qq-3Ey"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glM-o7-Oce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="403" y="1594"/>
+            <point key="canvasLocation" x="402.89855072463769" y="1593.75"/>
         </scene>
         <!--Side Menu View Controller-->
         <scene sceneID="2Gt-TD-4F9">

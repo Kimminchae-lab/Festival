@@ -12,6 +12,7 @@ class ClassViewController: UIViewController {
     var tableView: UITableView = {
         let tableview = UITableView()
         tableview.translatesAutoresizingMaskIntoConstraints = false
+        tableview.separatorStyle = .none
         return tableview
     }()
     
