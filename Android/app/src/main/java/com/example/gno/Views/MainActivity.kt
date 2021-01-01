@@ -16,7 +16,11 @@ class MainActivity : AppCompatActivity() {
         actionBar?.hide()
 
         setSupportActionBar(toolBar)
+
+        // Activate Home Button
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        // Change Image on ToolBar to Menu
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24)
 
     }
