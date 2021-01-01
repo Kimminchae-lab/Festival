@@ -7,8 +7,8 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-
+class LoginViewController: UIViewController, UITextFieldDelegate {
+    
     @IBOutlet weak var idView: UIView! {
         didSet {
             idView.layer.cornerRadius = 4
@@ -26,11 +26,29 @@ class LoginViewController: UIViewController {
             doneBtn.layer.cornerRadius = 4
         }
     }
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        idTextField.delegate = self
+        passwordTextField.delegate = self
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        idTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        idTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        return true
+    }
+    
     
     func goMainPage(){
         guard let goMain = self.storyboard?.instantiateViewController(identifier: "MainPage") else { return }
@@ -43,5 +61,5 @@ class LoginViewController: UIViewController {
         goMainPage()
     }
     
-
+    
 }
