@@ -13,8 +13,11 @@ class MainActivity : AppCompatActivity() {
 
         // 액션바 없애기
         val actionBar = supportActionBar
-        // actionBar?.hide()
+        actionBar?.hide()
 
+        setSupportActionBar(toolBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24)
 
     }
 }
