@@ -23,5 +23,6 @@ class MainActivity : AppCompatActivity() {
         // Change Image on ToolBar to Menu
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24)
 
+
     }
 }
