@@ -11,19 +11,19 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var idView: UIView! {
         didSet {
-            idView.layer.cornerRadius = 10
+            idView.layer.cornerRadius = 4
             idView.layer.borderWidth = 1
         }
     }
     @IBOutlet weak var passwordView: UIView! {
         didSet {
-            passwordView.layer.cornerRadius = 10
+            passwordView.layer.cornerRadius = 4
             passwordView.layer.borderWidth = 1
         }
     }
     @IBOutlet weak var doneBtn: UIButton! {
         didSet {
-            doneBtn.layer.cornerRadius = 10
+            doneBtn.layer.cornerRadius = 4
         }
     }
     override func viewDidLoad() {
