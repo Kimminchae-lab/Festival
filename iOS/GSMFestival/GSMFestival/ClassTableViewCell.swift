@@ -12,7 +12,8 @@ class ClassTableViewCell: UITableViewCell {
     
     var cellView: UIView = {
         let view = UIView()
-        view.backgroundColor = .systemGray6
+        view.backgroundColor = .white
+        view.layer.borderWidth = 1
         view.layer.cornerRadius = 10
         view.translatesAutoresizingMaskIntoConstraints = false
         return view

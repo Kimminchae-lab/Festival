@@ -24,10 +24,12 @@ class SchoolScheduleViewController: UIViewController {
             calendarView.appearance.headerTitleColor = .black
             calendarView.appearance.headerTitleFont = UIFont.systemFont(ofSize: 24)
             calendarView.locale = Locale(identifier: "ko_KR")
-            calendarView.backgroundColor = UIColor(red: 241/255, green: 249/255, blue: 255/255, alpha: 1)
+//            calendarView.backgroundColor = UIColor(red: 241/255, green: 249/255, blue: 255/255, alpha: 1)
+            calendarView.backgroundColor = .white
             calendarView.appearance.selectionColor = UIColor(red: 38/255, green: 153/255, blue: 251/255, alpha: 1)
             calendarView.appearance.todayColor = UIColor(red: 188/255, green: 224/255, blue: 253/255, alpha: 1)
             calendarView.appearance.headerMinimumDissolvedAlpha = 0.0
+            calendarView.layer.borderWidth = 2
         }
     }
     
