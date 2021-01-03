@@ -14,6 +14,7 @@ class SideMenuViewController: UITableViewController {
         tableView.backgroundColor = .white
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
+        tableView.layer.borderWidth = 2
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
