@@ -40,8 +40,5 @@ class SideMenuViewController: UITableViewController {
         nav.modalPresentationStyle = .fullScreen
         present(nav,animated: true)
         
-        
-        
-        
     }
 }

@@ -184,7 +184,7 @@ open class SideMenuNavigationController: UINavigationController {
         //사라지는 속도
         self.dismissDuration = 0.8
         //가로 크기 40퍼
-        self.menuWidth = self.view.frame.width * 0.4
+        self.menuWidth = self.view.frame.width * 0.45
     }
     
     override open func awakeFromNib() {
