@@ -7,15 +7,13 @@
 
 import UIKit
 
-
-
 class SideMenuViewController: UITableViewController {
-    
-    let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = darkColor
+        tableView.backgroundColor = .white
+        tableView.tableFooterView = UIView()
+        tableView.separatorStyle = .none
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
@@ -26,8 +24,7 @@ class SideMenuViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = items[indexPath.row]
-        cell.textLabel?.textColor = .white
-        cell.backgroundColor = darkColor
+        cell.textLabel?.textColor = .black
         return cell
     }
     
