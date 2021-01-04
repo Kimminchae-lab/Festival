@@ -29,7 +29,7 @@ class SchoolScheduleViewController: UIViewController {
             calendarView.appearance.selectionColor = UIColor(red: 38/255, green: 153/255, blue: 251/255, alpha: 1)
             calendarView.appearance.todayColor = UIColor(red: 188/255, green: 224/255, blue: 253/255, alpha: 1)
             calendarView.appearance.headerMinimumDissolvedAlpha = 0.0
-            calendarView.layer.borderWidth = 2
+//            calendarView.layer.borderWidth = 2
         }
     }
     

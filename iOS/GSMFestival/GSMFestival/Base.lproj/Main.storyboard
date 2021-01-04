@@ -365,10 +365,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrQ-5P-PUa" customClass="FSCalendar">
                                 <rect key="frame" x="0.0" y="140" width="414" height="543"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이벤트 없음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJW-vQ-BOU">
-                                <rect key="frame" x="20" y="691" width="194" height="22"/>
+                                <rect key="frame" x="20" y="692.5" width="194" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -377,14 +376,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CJW-vQ-BOU" secondAttribute="trailing" constant="200" id="8ON-lU-b7A"/>
-                            <constraint firstItem="CJW-vQ-BOU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bz1-4x-a1k"/>
-                            <constraint firstItem="CJW-vQ-BOU" firstAttribute="top" secondItem="TrQ-5P-PUa" secondAttribute="bottom" constant="8" id="Tdl-lk-8uz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CJW-vQ-BOU" secondAttribute="bottom" constant="100" id="Zyq-UX-3E2"/>
-                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gDo-Mk-HSN"/>
-                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ofE-eP-Hp0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TrQ-5P-PUa" secondAttribute="bottom" constant="130" id="pCf-9a-BIh"/>
-                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vZh-YS-jIZ"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Dd-Yn-PtK"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H5t-FT-cH7"/>
+                            <constraint firstItem="CJW-vQ-BOU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M6j-g6-SEL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CJW-vQ-BOU" secondAttribute="trailing" constant="200" id="dId-K2-1sg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TrQ-5P-PUa" secondAttribute="bottom" constant="130" id="lra-m4-SFE"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nI3-gQ-7QX"/>
+                            <constraint firstItem="CJW-vQ-BOU" firstAttribute="top" secondItem="TrQ-5P-PUa" secondAttribute="bottom" constant="9.5" id="wfV-ZV-f8e"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="학사일정" id="51a-Lx-ucE"/>
