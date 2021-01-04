@@ -29,10 +29,10 @@
         tools:layout_editor_absoluteY="159dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/gno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="G:NO"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="16dp" />
 
@@ -43,4 +43,12 @@
         android:text="TextView"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="58dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="94dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
