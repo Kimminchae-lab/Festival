@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">G:NO</string>
     <string name="g_no">G:NO</string>
+    <string name="login">로그인</string>
 </resources>
