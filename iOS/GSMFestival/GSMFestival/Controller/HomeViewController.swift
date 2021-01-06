@@ -24,6 +24,8 @@ class HomeViewController: UIViewController {
         
         self.collectionView.collectionViewLayout = createCompositionalLayout()
     }
+    
+    
 }
 
 
