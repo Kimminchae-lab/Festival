@@ -9,9 +9,10 @@ import UIKit
 
 class ClassContentViewController: UIViewController {
 
+    @IBOutlet weak var classContentLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = classTitleText
         
    
     }

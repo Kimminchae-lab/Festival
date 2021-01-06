@@ -21,22 +21,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menu = SideMenuNavigationController(rootViewController: SideMenuViewController())
-        menu?.leftSide = true
-        menu?.setNavigationBarHidden(true, animated: false)
-        
-        
-        SideMenuManager.default.leftMenuNavigationController = menu
-        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
-        
         collectionView.delegate = self
         collectionView.dataSource = self
         
         self.collectionView.collectionViewLayout = createCompositionalLayout()
-    }
-    
-    @IBAction func didTapMenu(_ sender: Any) {
-        present(menu!, animated: true)
     }
 }
 

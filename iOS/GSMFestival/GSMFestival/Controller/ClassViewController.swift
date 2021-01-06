@@ -30,7 +30,7 @@ class ClassViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-        updateViewConstraints()
+//        updateViewConstraints()
     }
 //
 //    override func updateViewConstraints() {
@@ -71,7 +71,7 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        classTitleText = classTitleItems[indexPath.row]
+        classTitleText = classTitleItems[indexPath.row]
 //        let vc = ClassContentViewController()
 //        navigationController?.pushViewController(vc, animated: true)
     }
