@@ -175,17 +175,6 @@ open class SideMenuNavigationController: UINavigationController {
         setup()
     }
     
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        //메뉴 나오는 스타일
-        self.presentationStyle = .menuSlideIn
-        //보여지는 속도
-        self.presentDuration = 0.8
-        //사라지는 속도
-        self.dismissDuration = 0.8
-        //가로 크기 40퍼
-        self.menuWidth = self.view.frame.width * 0.45
-    }
     
     override open func awakeFromNib() {
         super.awakeFromNib()

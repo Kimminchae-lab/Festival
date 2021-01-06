@@ -21,22 +21,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menu = SideMenuNavigationController(rootViewController: SideMenuViewController())
-        menu?.leftSide = true
-        menu?.setNavigationBarHidden(true, animated: false)
-        
-        
-        SideMenuManager.default.leftMenuNavigationController = menu
-        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
-        
         collectionView.delegate = self
         collectionView.dataSource = self
         
         self.collectionView.collectionViewLayout = createCompositionalLayout()
-    }
-    
-    @IBAction func didTapMenu(_ sender: Any) {
-        present(menu!, animated: true)
     }
 }
 
@@ -105,12 +93,11 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        titleItem = items[indexPath.row ]
-        let vc = ClassViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        present(nav,animated: true)
-        
+        titleItem = items[indexPath.row]
+//        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ClassViewController") as? ClassViewController else { return }
+//        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = ClassViewController()
+//        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
