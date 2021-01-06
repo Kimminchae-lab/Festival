@@ -105,12 +105,11 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        titleItem = items[indexPath.row ]
-        let vc = ClassViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        present(nav,animated: true)
-        
+        titleItem = items[indexPath.row]
+//        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ClassViewController") as? ClassViewController else { return }
+//        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = ClassViewController()
+//        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

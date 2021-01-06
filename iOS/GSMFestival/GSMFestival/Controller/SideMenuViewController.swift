@@ -37,9 +37,7 @@ class SideMenuViewController: UITableViewController {
         titleItem = items[indexPath.row]
         
         let vc = ClassViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        present(nav,animated: true)
+        navigationController?.pushViewController(vc, animated: true)
         
     }
 }
