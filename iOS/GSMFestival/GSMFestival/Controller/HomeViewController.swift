@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SideMenu
 
 
 var items = ["2학년 전체", "2-4", "2-4 마이크로프로세서", "물리", "2- 4 성공적인 직업생활"]
@@ -15,7 +14,6 @@ var titleItem = ""
 
 class HomeViewController: UIViewController {
     
-    var menu: SideMenuNavigationController?
     @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
