@@ -16,14 +16,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/deno_black_logo" />
 
-    <ImageView
+    <TextView
         android:id="@+id/copyright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:text="Copyright 2020. Amolang All rights reserved."
+        android:textAppearance="@style/copyright"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:srcCompat="@drawable/copyright" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

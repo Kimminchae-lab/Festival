@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">G:NO</string>
+    <string name="g_no">G:NO</string>
+    <string name="login">로그인</string>
+    <string name="howToLogin">발급받은 아이디와 비밀번호를 입력하세요</string>
+    <string name="idEditText">&#160;&#160;아이디</string>
+    <string name="pwEditText">&#160;&#160;비밀번호</string>
 </resources>
