@@ -16,13 +16,11 @@ class LoginActivity : AppCompatActivity() {
         btn_Login.setOnClickListener { startLoading() }
     }
 
-    // 2초 후 화면 전환(LoginActivity -> MainActivity)
+    // 화면 전환(LoginActivity -> MainActivity)
     private fun startLoading() {
-        Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }, 2000)
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     // region 뒤로가기 두 번 누르면 종료
