@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        self.collectionView.collectionViewLayout = createCompositionalLayout()
+        collectionView.collectionViewLayout = createCompositionalLayout()
     }
     
     
