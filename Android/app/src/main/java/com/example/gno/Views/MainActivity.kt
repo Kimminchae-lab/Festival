@@ -3,11 +3,41 @@ package com.example.gno.Views
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import com.example.gno.R
+import com.example.gno.navigation.FocusFragment
+import com.example.gno.navigation.MoreFragment
+import com.example.gno.navigation.NotificationFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
+    // region BottomNavigation 선택
+    override fun onNavigationItemSelected(p0: MenuItem): Boolean {
+        when (p0.itemId) {
+            R.id.notification -> {
+                val transaction = supportFragmentManager.beginTransaction()
+                transaction.replace(R.id.frame, NotificationFragment())
+                transaction.commit()
+                return true
+            }
+            R.id.focus -> {
+                val transaction = supportFragmentManager.beginTransaction()
+                transaction.replace(R.id.frame, FocusFragment())
+                transaction.commit()
+                return true
+            }
+            R.id.more -> {
+                val transaction = supportFragmentManager.beginTransaction()
+                transaction.replace(R.id.frame, MoreFragment())
+                transaction.commit()
+                return true
+            }
+        }
+        return false
+    }
+    // endregion
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,7 +54,12 @@ class MainActivity : AppCompatActivity() {
         // Change Image on ToolBar to Menu
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24)
 
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.frame, NotificationFragment())
+        transaction.commit()
 
+
+        navigation.setOnNavigationItemSelectedListener(this)
     }
 
     // region 뒤로가기 두 번 누르면 종료
