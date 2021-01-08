@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // 액션바 없애기
+        // Hide ActionBar
         val actionBar = supportActionBar
         actionBar?.hide()
 
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             return
         }
 
-        // 처음 클릭 메시지
+        // If you click Back first
         Toast.makeText(this, "뒤로가기 버튼을 한번 더 누르시면 앱이 종료됩니다.", Toast.LENGTH_SHORT).show()
         backPressedTime = System.currentTimeMillis()
     }
