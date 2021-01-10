@@ -14,6 +14,7 @@ class SplashActivity : AppCompatActivity() {
 
         startLoading()
     }
+
     // 2초 후 화면 전환(SplashActivity -> LoginActivity)
     private fun startLoading() {
         Handler().postDelayed({
