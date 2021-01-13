@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ClassTableViewCell: UITableViewCell {
+class HomeClassTableViewCell: UITableViewCell {
     @IBOutlet weak var cellView: UIView! {
         didSet {
             cellView.layer.cornerRadius = 10
