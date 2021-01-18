@@ -1,5 +1,5 @@
 //
-//  ClassViewController.swift
+//  HomeClassViewController.swift
 //  GSMFestival
 //
 //  Created by 조주혁 on 2020/11/18.
@@ -11,7 +11,7 @@ var classTitleItems = ["배움터지킴이 선생님 만족도 설문조사", "<
 var classDateItems = ["2020-12-16", "2020-12-22"]
 var classTitleText = ""
 
-class ClassViewController: UIViewController {
+class HomeClassViewController: UIViewController {
 //    var isUpdateConstraint: Bool = false
 //    var tableView: UITableView = {
 //        let tableview = UITableView()
@@ -53,7 +53,7 @@ class ClassViewController: UIViewController {
 //    }
 }
 
-extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
+extension HomeClassViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return classTitleItems.count
     }
@@ -63,7 +63,7 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ClassTableViewCell", for: indexPath) as! ClassTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeClassTableViewCell", for: indexPath) as! HomeClassTableViewCell
         cell.titleLabel.text = classTitleItems[indexPath.row]
         cell.dateLabel.text = classDateItems[indexPath.row]
         print("gggg")

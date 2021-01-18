@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="1512" y="-802"/>
         </scene>
-        <!--Class View Controller-->
+        <!--Home Class View Controller-->
         <scene sceneID="smK-S2-8DJ">
             <objects>
-                <viewController id="GR0-J7-unR" customClass="ClassViewController" customModule="GSMFestival" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GR0-J7-unR" customClass="HomeClassViewController" customModule="GSMFestival" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J7h-6m-agp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,7 +147,7 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ClassTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClassTableViewCell" rowHeight="120" id="VtT-tS-o47" customClass="ClassTableViewCell" customModule="GSMFestival" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ClassTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeClassTableViewCell" rowHeight="120" id="VtT-tS-o47" customClass="HomeClassTableViewCell" customModule="GSMFestival" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VtT-tS-o47" id="79e-p7-Wh0">
@@ -216,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="-1391" y="2294"/>
         </scene>
-        <!--Class Content View Controller-->
+        <!--Home Class Content View Controller-->
         <scene sceneID="fhp-hF-f6u">
             <objects>
-                <viewController id="Y8R-EI-zQC" customClass="ClassContentViewController" customModule="GSMFestival" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y8R-EI-zQC" customClass="HomeClassContentViewController" customModule="GSMFestival" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lW5-c2-zdR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +271,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CollectionViewCell" id="xEE-XT-qrY" customClass="CollectionViewCell" customModule="GSMFestival" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HomeCollectionViewCell" id="xEE-XT-qrY" customClass="HomeCollectionViewCell" customModule="GSMFestival" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="E1W-fn-cLb">

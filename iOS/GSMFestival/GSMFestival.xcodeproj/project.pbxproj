@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BD08279B25850C6F00EA6324 /* AdditionalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD08279A25850C6F00EA6324 /* AdditionalMenuViewController.swift */; };
-		BD0E418125A5BB0700E322A7 /* ClassContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0E418025A5BB0700E322A7 /* ClassContentViewController.swift */; };
-		BD21662825694B1B00EF984C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21662725694B1B00EF984C /* CollectionViewCell.swift */; };
+		BD0E418125A5BB0700E322A7 /* HomeClassContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0E418025A5BB0700E322A7 /* HomeClassContentViewController.swift */; };
+		BD21662825694B1B00EF984C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21662725694B1B00EF984C /* HomeCollectionViewCell.swift */; };
 		BD7033ED2559847000D54CE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033EC2559847000D54CE6 /* AppDelegate.swift */; };
 		BD7033EF2559847000D54CE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033EE2559847000D54CE6 /* SceneDelegate.swift */; };
 		BD7033F12559847000D54CE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7033F02559847000D54CE6 /* HomeViewController.swift */; };
@@ -17,8 +17,8 @@
 		BD7033F62559847100D54CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7033F52559847100D54CE6 /* Assets.xcassets */; };
 		BD7033F92559847100D54CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7033F72559847100D54CE6 /* LaunchScreen.storyboard */; };
 		BDA2E8FC257F995C002ECD2A /* SchoolScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2E8FB257F995C002ECD2A /* SchoolScheduleViewController.swift */; };
-		BDA2F6FF2565659900CB9A7F /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */; };
-		BDA55B8C25909994005979DE /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA55B8B25909994005979DE /* ClassTableViewCell.swift */; };
+		BDA2F6FF2565659900CB9A7F /* HomeClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F6FE2565659900CB9A7F /* HomeClassViewController.swift */; };
+		BDA55B8C25909994005979DE /* HomeClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA55B8B25909994005979DE /* HomeClassTableViewCell.swift */; };
 		BDE9E160259DE4AD00F90C64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE9E15F259DE4AD00F90C64 /* LoginViewController.swift */; };
 		D2D3B9D4F3D07CAE63369020 /* Pods_GSMFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACDFE46B5733FD77016BF3C /* Pods_GSMFestival.framework */; };
 /* End PBXBuildFile section */
@@ -28,8 +28,8 @@
 		4ACDFE46B5733FD77016BF3C /* Pods_GSMFestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSMFestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		864F02D4C4C2F685D6A56724 /* Pods-GSMFestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSMFestival.debug.xcconfig"; path = "Target Support Files/Pods-GSMFestival/Pods-GSMFestival.debug.xcconfig"; sourceTree = "<group>"; };
 		BD08279A25850C6F00EA6324 /* AdditionalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalMenuViewController.swift; sourceTree = "<group>"; };
-		BD0E418025A5BB0700E322A7 /* ClassContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassContentViewController.swift; sourceTree = "<group>"; };
-		BD21662725694B1B00EF984C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		BD0E418025A5BB0700E322A7 /* HomeClassContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeClassContentViewController.swift; sourceTree = "<group>"; };
+		BD21662725694B1B00EF984C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD7033E92559847000D54CE6 /* GSMFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSMFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7033EC2559847000D54CE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7033EE2559847000D54CE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,8 +39,8 @@
 		BD7033F82559847100D54CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD7033FA2559847100D54CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDA2E8FB257F995C002ECD2A /* SchoolScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolScheduleViewController.swift; sourceTree = "<group>"; };
-		BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
-		BDA55B8B25909994005979DE /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		BDA2F6FE2565659900CB9A7F /* HomeClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeClassViewController.swift; sourceTree = "<group>"; };
+		BDA55B8B25909994005979DE /* HomeClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeClassTableViewCell.swift; sourceTree = "<group>"; };
 		BDE9E15F259DE4AD00F90C64 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,13 +96,11 @@
 			children = (
 				BD7033EC2559847000D54CE6 /* AppDelegate.swift */,
 				BD7033EE2559847000D54CE6 /* SceneDelegate.swift */,
-				BDA2E8F4257F7B03002ECD2A /* Controller */,
-				BDA55B8B25909994005979DE /* ClassTableViewCell.swift */,
-				BD21662725694B1B00EF984C /* CollectionViewCell.swift */,
-				BD7033F22559847000D54CE6 /* Main.storyboard */,
-				BD7033F72559847100D54CE6 /* LaunchScreen.storyboard */,
 				BD7033F52559847100D54CE6 /* Assets.xcassets */,
 				BD7033FA2559847100D54CE6 /* Info.plist */,
+				BDDCDB8F25AEFB3C00C4E0A3 /* Model */,
+				BDDCDB9025AEFB4200C4E0A3 /* View */,
+				BDA2E8F4257F7B03002ECD2A /* Controller */,
 			);
 			path = GSMFestival;
 			sourceTree = "<group>";
@@ -110,14 +108,64 @@
 		BDA2E8F4257F7B03002ECD2A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BD7033F02559847000D54CE6 /* HomeViewController.swift */,
-				BDA2E8FB257F995C002ECD2A /* SchoolScheduleViewController.swift */,
-				BD08279A25850C6F00EA6324 /* AdditionalMenuViewController.swift */,
-				BDE9E15F259DE4AD00F90C64 /* LoginViewController.swift */,
-				BDA2F6FE2565659900CB9A7F /* ClassViewController.swift */,
-				BD0E418025A5BB0700E322A7 /* ClassContentViewController.swift */,
+				BDDCDB8725AEF96900C4E0A3 /* Home */,
+				BDDCDB8925AEF9C000C4E0A3 /* SchoolSchedule */,
+				BDDCDB8A25AEF9D800C4E0A3 /* Add */,
+				BDDCDB8E25AEFB2F00C4E0A3 /* Login */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDDCDB8725AEF96900C4E0A3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BD0E418025A5BB0700E322A7 /* HomeClassContentViewController.swift */,
+				BD7033F02559847000D54CE6 /* HomeViewController.swift */,
+				BD21662725694B1B00EF984C /* HomeCollectionViewCell.swift */,
+				BDA2F6FE2565659900CB9A7F /* HomeClassViewController.swift */,
+				BDA55B8B25909994005979DE /* HomeClassTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BDDCDB8925AEF9C000C4E0A3 /* SchoolSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				BDA2E8FB257F995C002ECD2A /* SchoolScheduleViewController.swift */,
+			);
+			path = SchoolSchedule;
+			sourceTree = "<group>";
+		};
+		BDDCDB8A25AEF9D800C4E0A3 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				BD08279A25850C6F00EA6324 /* AdditionalMenuViewController.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		BDDCDB8E25AEFB2F00C4E0A3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BDE9E15F259DE4AD00F90C64 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BDDCDB8F25AEFB3C00C4E0A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDDCDB9025AEFB4200C4E0A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD7033F22559847000D54CE6 /* Main.storyboard */,
+				BD7033F72559847100D54CE6 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,14 +284,14 @@
 			files = (
 				BD7033ED2559847000D54CE6 /* AppDelegate.swift in Sources */,
 				BD7033F12559847000D54CE6 /* HomeViewController.swift in Sources */,
-				BDA2F6FF2565659900CB9A7F /* ClassViewController.swift in Sources */,
+				BDA2F6FF2565659900CB9A7F /* HomeClassViewController.swift in Sources */,
 				BD08279B25850C6F00EA6324 /* AdditionalMenuViewController.swift in Sources */,
-				BD21662825694B1B00EF984C /* CollectionViewCell.swift in Sources */,
+				BD21662825694B1B00EF984C /* HomeCollectionViewCell.swift in Sources */,
 				BD7033EF2559847000D54CE6 /* SceneDelegate.swift in Sources */,
-				BD0E418125A5BB0700E322A7 /* ClassContentViewController.swift in Sources */,
+				BD0E418125A5BB0700E322A7 /* HomeClassContentViewController.swift in Sources */,
 				BDA2E8FC257F995C002ECD2A /* SchoolScheduleViewController.swift in Sources */,
 				BDE9E160259DE4AD00F90C64 /* LoginViewController.swift in Sources */,
-				BDA55B8C25909994005979DE /* ClassTableViewCell.swift in Sources */,
+				BDA55B8C25909994005979DE /* HomeClassTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
