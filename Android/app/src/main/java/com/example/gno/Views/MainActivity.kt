@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import com.example.gno.R
-import com.example.gno.navigation.FocusFragment
+import com.example.gno.navigation.ScheduleFragment
 import com.example.gno.navigation.MoreFragment
 import com.example.gno.navigation.NotificationFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -20,12 +20,14 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 val transaction = supportFragmentManager.beginTransaction()
                 transaction.replace(R.id.frame, NotificationFragment())
                 transaction.commit()
+                toolBar.title = "공지사항"
                 return true
             }
-            R.id.focus -> {
+            R.id.schedule -> {
                 val transaction = supportFragmentManager.beginTransaction()
-                transaction.replace(R.id.frame, FocusFragment())
+                transaction.replace(R.id.frame, ScheduleFragment())
                 transaction.commit()
+                toolBar.title = "학사일정"
                 return true
             }
             R.id.more -> {
