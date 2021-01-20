@@ -5,5 +5,7 @@
     <string name="howToLogin">발급받은 아이디와 비밀번호를 입력하세요</string>
     <string name="idEditText">&#160;&#160;아이디</string>
     <string name="pwEditText">&#160;&#160;비밀번호</string>
+    <string name="feeding">급식</string>
+    <string name="time_Table">시간표</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
