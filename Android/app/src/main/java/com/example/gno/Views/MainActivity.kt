@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 val transaction = supportFragmentManager.beginTransaction()
                 transaction.replace(R.id.frame, MoreFragment())
                 transaction.commit()
+                toolBar.title = "더보기"
                 return true
             }
         }
