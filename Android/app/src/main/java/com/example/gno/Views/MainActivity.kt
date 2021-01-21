@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import com.example.gno.R
+import com.example.gno.navigation.HomeFragment
 import com.example.gno.navigation.ScheduleFragment
 import com.example.gno.navigation.MoreFragment
 import com.example.gno.navigation.NotificationFragment
@@ -35,6 +36,13 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 transaction.replace(R.id.frame, MoreFragment())
                 transaction.commit()
                 toolBar.title = "더보기"
+                return true
+            }
+            R.id.home -> {
+                val transaction = supportFragmentManager.beginTransaction()
+                transaction.replace(R.id.frame, HomeFragment())
+                transaction.commit()
+                toolBar.title = "홈"
                 return true
             }
         }
