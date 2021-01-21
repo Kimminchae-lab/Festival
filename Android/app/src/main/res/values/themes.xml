@@ -47,12 +47,12 @@
     </style>
 
     <style name="Urgent_Notice">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
     <style name="all_Notice">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
 </resources>
