@@ -7,4 +7,6 @@
     <string name="pwEditText">&#160;&#160;비밀번호</string>
     <string name="feeding">급식</string>
     <string name="time_Table">시간표</string>
+    <string name="urgent_Notice">긴급공지사항</string>
+    <string name="all_Notice">전체공지사항</string>
 </resources>
