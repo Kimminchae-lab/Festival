@@ -4,6 +4,7 @@
         android:id="@+id/home"
         android:icon="@drawable/home"
         android:title="홈" />
+
     <item
         android:id="@+id/notification"
         android:icon="@drawable/notification"
