@@ -30,8 +30,9 @@ class SchoolScheduleViewController: UIViewController {
             calendarView.appearance.selectionColor = .black
             calendarView.appearance.weekdayTextColor = .black
             calendarView.appearance.headerMinimumDissolvedAlpha = 0.0
+            calendarView.addBorder(toSide: .bottom, color: .black, borderWidth: 1)
             calendarView.addBorder(toSide: .top, color: .black, borderWidth: 2)
-            calendarView.addBorder(toSide: .bottom, color: .black, borderWidth: 2)
+            
         }
     }
     
