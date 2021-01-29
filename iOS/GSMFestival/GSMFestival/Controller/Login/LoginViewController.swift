@@ -26,14 +26,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             doneBtn.layer.cornerRadius = 4
         }
     }
-    @IBOutlet weak var idTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var idTextField: UITextField! {
+        didSet {
+            idTextField.delegate = self
+        }
+    }
+    @IBOutlet weak var passwordTextField: UITextField! {
+        didSet {
+            passwordTextField.delegate = self
+        }
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        idTextField.delegate = self
-        passwordTextField.delegate = self
+       
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

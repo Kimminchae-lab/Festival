@@ -20,16 +20,20 @@ class HomeClassViewController: UIViewController {
 //        return tableview
 //    }()
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.delegate = self
+            tableView.dataSource = self
+            tableView.tableFooterView = UIView()
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.navigationBar.tintColor = .black
         
         title = titleItem
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.tableFooterView = UIView()
+        
 //        updateViewConstraints()
     }
 //

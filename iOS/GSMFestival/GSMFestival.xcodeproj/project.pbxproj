@@ -119,11 +119,11 @@
 		BDDCDB8725AEF96900C4E0A3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				BD0E418025A5BB0700E322A7 /* HomeClassContentViewController.swift */,
 				BD7033F02559847000D54CE6 /* HomeViewController.swift */,
 				BD21662725694B1B00EF984C /* HomeCollectionViewCell.swift */,
 				BDA2F6FE2565659900CB9A7F /* HomeClassViewController.swift */,
 				BDA55B8B25909994005979DE /* HomeClassTableViewCell.swift */,
+				BD0E418025A5BB0700E322A7 /* HomeClassContentViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";

@@ -14,15 +14,19 @@ var titleItem = ""
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var collectionView: UICollectionView! {
+        didSet {
+            
+            collectionView.delegate = self
+            collectionView.dataSource = self
+            collectionView.collectionViewLayout = createCompositionalLayout()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        
-        collectionView.collectionViewLayout = createCompositionalLayout()
     }
     
     
