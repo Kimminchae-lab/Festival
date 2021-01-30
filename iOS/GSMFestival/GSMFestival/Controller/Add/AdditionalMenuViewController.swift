@@ -11,8 +11,6 @@ class AdditionalMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
 
 }

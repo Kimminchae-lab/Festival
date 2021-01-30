@@ -13,8 +13,6 @@ class HomeClassContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = classTitleText
-        
-   
     }
     
 

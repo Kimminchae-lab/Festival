@@ -37,7 +37,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -48,7 +47,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.resignFirstResponder()
     }
     
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         idTextField.resignFirstResponder()
@@ -56,17 +54,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    
     func goMainPage(){
         guard let goMain = self.storyboard?.instantiateViewController(identifier: "MainPage") else { return }
         goMain.modalPresentationStyle = .fullScreen
         self.present(goMain, animated: true)
     }
     
-    
     @IBAction func loginBtn(_ sender: Any) {
         goMainPage()
     }
-    
-    
 }

@@ -17,62 +17,9 @@ class HomeClassTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    //    var isUpdateConstraint: Bool = false
-//
-//    var cellView: UIView = {
-//        let view = UIView()
-//        view.backgroundColor = .white
-//        view.layer.borderWidth = 1
-//        view.layer.cornerRadius = 10
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//        return view
-//    }()
-//
-//    var titleLable: UILabel = {
-//        let label = UILabel()
-//        label.translatesAutoresizingMaskIntoConstraints = false
-//        label.font = UIFont.systemFont(ofSize: 20)
-//        return label
-//    }()
-//
-//    var dateLabel: UILabel = {
-//        let label = UILabel()
-//        label.translatesAutoresizingMaskIntoConstraints = false
-//        label.textColor = UIColor(red: 158/255, green: 160/255, blue: 161/255, alpha: 1.0)
-//        label.font = UIFont.systemFont(ofSize: 15)
-//        return label
-//    }()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        updateConstraints()
+        
     }
-    
-//    override func updateConstraints() {
-//        if !isUpdateConstraint {
-//            isUpdateConstraint = true
-//            print("as")
-//            addSubview(cellView)
-//            cellView.addSubview(titleLable)
-//            cellView.addSubview(dateLabel)
-//
-//            cellView.topAnchor.constraint(equalTo: topAnchor, constant: 10).isActive = true
-//            cellView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10).isActive = true
-//            cellView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
-//            cellView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10).isActive = true
-//
-//            titleLable.topAnchor.constraint(equalTo: cellView.topAnchor, constant: 10).isActive = true
-//            titleLable.leadingAnchor.constraint(equalTo: cellView.leadingAnchor, constant: 10).isActive = true
-//            titleLable.trailingAnchor.constraint(equalTo: cellView.trailingAnchor, constant: -10).isActive = true
-//            titleLable.bottomAnchor.constraint(equalTo: cellView.bottomAnchor, constant: -68.5).isActive = true
-//
-//            dateLabel.topAnchor.constraint(equalTo: titleLable.bottomAnchor, constant: 0).isActive = true
-//            dateLabel.leadingAnchor.constraint(equalTo: cellView.leadingAnchor, constant: 10).isActive = true
-//            dateLabel.trailingAnchor.constraint(equalTo: cellView.trailingAnchor, constant: -10).isActive = true
-//            dateLabel.bottomAnchor.constraint(equalTo: cellView.bottomAnchor, constant: -47.5).isActive = true
-//        }
-//
-//        super.updateConstraints()
-//    }
-//
 }

@@ -23,13 +23,10 @@ class SchoolScheduleViewController: UIViewController {
             calendarView.appearance.headerTitleColor = .black
             calendarView.appearance.headerTitleFont = UIFont.systemFont(ofSize: 24)
             calendarView.locale = Locale(identifier: "ko_KR")
-//            calendarView.backgroundColor = UIColor(red: 241/255, green: 249/255, blue: 255/255, alpha: 1)
             calendarView.backgroundColor = .white
-//            calendarView.appearance.selectionColor = UIColor(red: 38/255, green: 153/255, blue: 251/255, alpha: 1)
             calendarView.appearance.todayColor = .systemGray3
             calendarView.appearance.selectionColor = .black
             calendarView.appearance.weekdayTextColor = .black
-
         }
     }
     
@@ -38,13 +35,11 @@ class SchoolScheduleViewController: UIViewController {
         
         dateFormatter.dateFormat = "yyyy-MM-dd"
     }
-    
 }
 
 extension SchoolScheduleViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         print(dateFormatter.string(from: date) + " 선택됨")
-        
     }
     
     func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
@@ -65,6 +60,4 @@ extension SchoolScheduleViewController: FSCalendarDelegate, FSCalendarDataSource
             return nil
         }
     }
-    
-    
 }

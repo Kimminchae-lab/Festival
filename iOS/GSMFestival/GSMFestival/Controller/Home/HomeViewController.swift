@@ -16,7 +16,6 @@ class HomeViewController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView! {
         didSet {
-            
             collectionView.delegate = self
             collectionView.dataSource = self
             collectionView.collectionViewLayout = createCompositionalLayout()
@@ -25,11 +24,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
     }
-    
-    
 }
 
 
@@ -98,10 +93,6 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         titleItem = items[indexPath.row]
-//        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ClassViewController") as? ClassViewController else { return }
-//        self.navigationController?.pushViewController(vc, animated: true)
-//        let vc = ClassViewController()
-//        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
