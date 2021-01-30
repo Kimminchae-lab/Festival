@@ -261,7 +261,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EIh-xa-anp">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="TLe-X8-xjN">
                                     <size key="itemSize" width="150" height="150"/>
@@ -336,26 +336,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrQ-5P-PUa" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="140" width="414" height="548"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crq-dd-PHa">
+                                <rect key="frame" x="0.0" y="140" width="414" height="2"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="ghZ-pi-j1k"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이벤트 없음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJW-vQ-BOU">
-                                <rect key="frame" x="20" y="697.5" width="194" height="20.5"/>
+                                <rect key="frame" x="10" y="700" width="204" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ym5-Yl-J2O">
+                                <rect key="frame" x="0.0" y="688" width="414" height="2"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="e9C-9g-A1d"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrQ-5P-PUa" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="142" width="414" height="546"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Dd-Yn-PtK"/>
-                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H5t-FT-cH7"/>
-                            <constraint firstItem="CJW-vQ-BOU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M6j-g6-SEL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CJW-vQ-BOU" secondAttribute="trailing" constant="200" id="dId-K2-1sg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TrQ-5P-PUa" secondAttribute="bottom" constant="125" id="lra-m4-SFE"/>
-                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nI3-gQ-7QX"/>
-                            <constraint firstItem="CJW-vQ-BOU" firstAttribute="top" secondItem="TrQ-5P-PUa" secondAttribute="bottom" constant="9.5" id="wfV-ZV-f8e"/>
+                            <constraint firstItem="crq-dd-PHa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0jy-xF-V2E"/>
+                            <constraint firstAttribute="trailing" secondItem="crq-dd-PHa" secondAttribute="trailing" id="7B9-Ts-B7V"/>
+                            <constraint firstItem="CJW-vQ-BOU" firstAttribute="top" secondItem="Ym5-Yl-J2O" secondAttribute="bottom" constant="10" id="9se-rH-Pai"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="top" secondItem="crq-dd-PHa" secondAttribute="bottom" id="MlR-zt-lfC"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YE6-7g-7gh"/>
+                            <constraint firstItem="crq-dd-PHa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YNS-6R-9kq"/>
+                            <constraint firstItem="CJW-vQ-BOU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hXF-PX-kEP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TrQ-5P-PUa" secondAttribute="bottom" constant="125" id="o9d-Qq-F9W"/>
+                            <constraint firstItem="TrQ-5P-PUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pQN-1N-OVJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ym5-Yl-J2O" secondAttribute="trailing" id="rpI-5Y-SOA"/>
+                            <constraint firstItem="Ym5-Yl-J2O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wLE-jG-UOn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CJW-vQ-BOU" secondAttribute="trailing" constant="200" id="x9w-I1-QkD"/>
+                            <constraint firstItem="Ym5-Yl-J2O" firstAttribute="top" secondItem="TrQ-5P-PUa" secondAttribute="bottom" id="xWJ-4o-pl8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="학사일정" id="51a-Lx-ucE"/>
@@ -455,7 +475,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jw7-7Q-ZE2">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="SRB-Py-I5f">
                                     <size key="itemSize" width="150" height="150"/>
