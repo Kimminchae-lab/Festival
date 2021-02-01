@@ -1,4 +1,4 @@
 # Festival
 2020 GSM Festival   
-G:NO
+G:NO   
 Android & iOS
