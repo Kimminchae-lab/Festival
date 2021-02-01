@@ -54,6 +54,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    func loginSucessAlert() {
+        let alert = UIAlertController(title: "로그인 성공", message: "로그인 성공!!", preferredStyle: UIAlertController.Style.alert)
+        let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (_) in
+            self.goMainPage()
+        }
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func loginFailAlert() {
+        let alert = UIAlertController(title: "로그인 실패", message: "로그인 실패!!", preferredStyle: UIAlertController.Style.alert)
+        let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
+    
     func goMainPage(){
         guard let goMain = self.storyboard?.instantiateViewController(identifier: "MainPage") else { return }
         goMain.modalPresentationStyle = .fullScreen
@@ -61,6 +77,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func loginBtn(_ sender: Any) {
-        goMainPage()
+        loginSucessAlert()
     }
 }
